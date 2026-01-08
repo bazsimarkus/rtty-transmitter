@@ -15,7 +15,7 @@
  *
  * @note
  * - This program is designed to work with Arduino boards.
- * - Ensure that the tonePin is correctly connected to the RTTY transmitter circuit.
+ * - Ensure that the DAC pins are correctly connected to the RTTY transmitter circuit.
  * - The baud rate for serial communication should match the baud rate set in the setup function.
  *
  * @par Usage:
@@ -34,6 +34,36 @@
  */
 
 #include <avr/pgmspace.h>
+#include <SPI.h> // Required for MCP4901
+
+// --- DDS / MCP4901 CONFIGURATION START ---
+// These variables manage the high-speed sine wave generation
+const int CS_PIN = 10;
+const double SAMPLE_RATE = 80000.0;
+volatile uint32_t phaseAccumulator = 0;
+volatile uint32_t phaseIncrement = 0; // Controls the frequency
+const byte CONFIG_HIGH = 0b00110000;  // MCP4901 Config
+
+// Sine Lookup Table (256 values)
+const uint8_t sineTable[256] = {
+  128, 131, 134, 137, 140, 143, 146, 149, 152, 155, 158, 162, 165, 167, 170, 173,
+  176, 179, 182, 185, 188, 190, 193, 196, 198, 201, 203, 206, 208, 211, 213, 215,
+  218, 220, 222, 224, 226, 228, 230, 232, 234, 235, 237, 238, 240, 241, 243, 244,
+  245, 246, 248, 249, 250, 250, 251, 252, 253, 253, 254, 254, 254, 255, 255, 255,
+  255, 255, 255, 255, 254, 254, 254, 253, 253, 252, 251, 250, 250, 249, 248, 246,
+  245, 244, 243, 241, 240, 238, 237, 235, 234, 232, 230, 228, 226, 224, 222, 220,
+  218, 215, 213, 211, 208, 206, 203, 201, 198, 196, 193, 190, 188, 185, 182, 179,
+  176, 173, 170, 167, 165, 162, 158, 155, 152, 149, 146, 143, 140, 137, 134, 131,
+  128, 124, 121, 118, 115, 112, 109, 106, 103, 100, 97, 93, 90, 88, 85, 82,
+  79, 76, 73, 70, 67, 65, 62, 59, 57, 54, 52, 49, 47, 44, 42, 40,
+  37, 35, 33, 31, 29, 27, 25, 23, 21, 20, 18, 17, 15, 14, 12, 11,
+  10, 9, 7, 6, 5, 5, 4, 3, 2, 2, 1, 1, 1, 0, 0, 0,
+  0, 0, 0, 0, 1, 1, 1, 2, 2, 3, 4, 5, 5, 6, 7, 9,
+  10, 11, 12, 14, 15, 17, 18, 20, 21, 23, 25, 27, 29, 31, 33, 35,
+  37, 40, 42, 44, 47, 49, 52, 54, 57, 59, 62, 65, 67, 70, 73, 76,
+  79, 82, 85, 88, 90, 93, 97, 100, 103, 106, 109, 112, 115, 118, 121, 124
+};
+// --- DDS / MCP4901 CONFIGURATION END ---
 
 const String baudotLTRS = "11111";
 const String baudotFIGS = "11011";
@@ -161,11 +191,6 @@ String generateBaudotString(String text) {
     return bits;
 }
 
-
-// RTTY params
-
-const int tonePin = 9;
-
 // AT COMMAND PARSER BEGIN
 
 /**
@@ -210,15 +235,22 @@ static void exec(char *cmdline)
               s++;
             }
             String bits = generateBaudotString(message);
+
+            // --- DDS CALCULATION START ---
+            // We pre-calculate the phase increments for the requested frequencies             // This allows the high/low frequencies to be dynamic
+            uint32_t incHigh = (uint32_t)((setParams.high * 4294967296.0) / SAMPLE_RATE);
+            uint32_t incLow = (uint32_t)((setParams.low * 4294967296.0) / SAMPLE_RATE);
+            // --- DDS CALCULATION END ---
+
             for (int i = 0; i < bits.length(); i++) {
               if (bits[i] == '1') {
-                tone(tonePin, setParams.high);
+                phaseIncrement = incHigh; // Set DDS generator to high freq
               } else {
-                tone(tonePin, setParams.low);
+                phaseIncrement = incLow; // Set DDS generator to low freq
               }
               delay(1000 / setParams.baud);
             }
-            noTone(tonePin);
+            phaseIncrement = 0; // Stop the wave generation
             Serial.println("OK");
         } else {
             Serial.println(F("Error: Invalid syntax for AT+send command."));
@@ -289,12 +321,28 @@ static void exec(char *cmdline)
  *
  * @details
  * - Initializes serial communication.
- * - Sets the tone pin as an output.
+ * - Initializes DAC output.
  */
 void setup()
 {
     Serial.begin(9600);
-    pinMode(tonePin, OUTPUT);
+    // --- MCP4901 & TIMER INIT ---
+    pinMode(CS_PIN, OUTPUT);
+    digitalWrite(CS_PIN, HIGH);
+    SPI.begin();
+    SPI.beginTransaction(SPISettings(8000000, MSBFIRST, SPI_MODE0));
+    
+    // Configure Timer 1 for 80kHz Interrupt
+    cli(); 
+    TCCR1A = 0; 
+    TCCR1B = 0; 
+    TCNT1  = 0; 
+    OCR1A = 199; 
+    TCCR1B |= (1 << WGM12); // CTC mode
+    TCCR1B |= (1 << CS10);  // No prescaling
+    TIMSK1 |= (1 << OCIE1A); // Enable interrupt
+    sei(); 
+    // --- END MCP4901 INIT ---
 }
 
 /**
@@ -330,4 +378,26 @@ void loop() {
     }
 
     /* Whatever else needs to be done... */
+}
+
+// --- High Speed DAC Interrupt ---
+ISR(TIMER1_COMPA_vect) {
+  // 1. Update Phase
+  phaseAccumulator += phaseIncrement;
+  
+  // 2. Get Sine Value
+  byte sineValue = sineTable[phaseAccumulator >> 24];
+
+  // 3. Send to MCP4901
+  PORTB &= ~_BV(2); // CS Low (Pin 10)
+
+  // Send High Byte
+  SPDR = CONFIG_HIGH | (sineValue >> 4); 
+  while (!(SPSR & _BV(SPIF))); 
+  
+  // Send Low Byte
+  SPDR = (sineValue << 4); 
+  while (!(SPSR & _BV(SPIF))); 
+
+  PORTB |= _BV(2); // CS High
 }
