@@ -1967,7 +1967,7 @@
   (junction (at 196.85 124.46) (diameter 0) (color 0 0 0 0)
     (uuid 16a92aa3-1d60-4f83-acde-8957e843ffe3)
   )
-  (junction (at 327.66 57.15) (diameter 0) (color 0 0 0 0)
+  (junction (at 332.74 57.15) (diameter 0) (color 0 0 0 0)
     (uuid 18dfd74e-000a-4a19-9cb3-ed2361d8a179)
   )
   (junction (at 182.88 81.28) (diameter 0) (color 0 0 0 0)
@@ -1994,7 +1994,7 @@
   (junction (at 251.46 54.61) (diameter 0) (color 0 0 0 0)
     (uuid 40c5f6af-6461-4331-948e-d24bb35b264c)
   )
-  (junction (at 312.42 44.45) (diameter 0) (color 0 0 0 0)
+  (junction (at 311.15 44.45) (diameter 0) (color 0 0 0 0)
     (uuid 42e892d6-77dc-433c-90f3-938d06e508ee)
   )
   (junction (at 95.25 127) (diameter 0) (color 0 0 0 0)
@@ -2054,7 +2054,7 @@
   (junction (at 379.73 109.22) (diameter 0) (color 0 0 0 0)
     (uuid b4862ec3-2085-4016-b001-7590058fe692)
   )
-  (junction (at 327.66 44.45) (diameter 0) (color 0 0 0 0)
+  (junction (at 332.74 44.45) (diameter 0) (color 0 0 0 0)
     (uuid bd62f6ef-fb04-45ca-850d-c936f53b8586)
   )
   (junction (at 228.6 87.63) (diameter 0) (color 0 0 0 0)
@@ -2069,7 +2069,7 @@
   (junction (at 170.18 76.2) (diameter 0) (color 0 0 0 0)
     (uuid d03e2f35-7bae-48fb-8765-bb0e207ce141)
   )
-  (junction (at 367.03 36.83) (diameter 0) (color 0 0 0 0)
+  (junction (at 369.57 36.83) (diameter 0) (color 0 0 0 0)
     (uuid dbb3cca2-5cb0-47f9-b38d-eb5438d690e2)
   )
   (junction (at 363.22 190.5) (diameter 0) (color 0 0 0 0)
@@ -2179,7 +2179,7 @@
     (stroke (width 0) (type default))
     (uuid 0f80728b-ede6-4a0e-a549-7f334b152604)
   )
-  (wire (pts (xy 381 36.83) (xy 381 41.91))
+  (wire (pts (xy 383.54 36.83) (xy 383.54 41.91))
     (stroke (width 0) (type default))
     (uuid 1226ec1d-7e4b-474b-85ee-d2f4deb665ff)
   )
@@ -2187,7 +2187,7 @@
     (stroke (width 0) (type default))
     (uuid 1322d625-efbf-4365-85ae-56390099816d)
   )
-  (wire (pts (xy 312.42 57.15) (xy 327.66 57.15))
+  (wire (pts (xy 311.15 57.15) (xy 332.74 57.15))
     (stroke (width 0) (type default))
     (uuid 1379a0c8-f12d-407b-81c9-477d6ec33392)
   )
@@ -2227,7 +2227,7 @@
     (stroke (width 0) (type default))
     (uuid 186f5041-a9e3-47c3-9717-860025ab5661)
   )
-  (wire (pts (xy 327.66 31.75) (xy 327.66 34.29))
+  (wire (pts (xy 332.74 31.75) (xy 332.74 34.29))
     (stroke (width 0) (type default))
     (uuid 192a8205-f22d-4728-a314-6347bffbba15)
   )
@@ -2315,7 +2315,7 @@
     (stroke (width 0) (type default))
     (uuid 25947243-b824-4460-ad1b-a99d4ef6a580)
   )
-  (wire (pts (xy 340.36 48.26) (xy 340.36 44.45))
+  (wire (pts (xy 345.44 48.26) (xy 345.44 44.45))
     (stroke (width 0) (type default))
     (uuid 26dfccbf-d0de-48ca-9025-6262ba064b3d)
   )
@@ -2371,7 +2371,7 @@
     (stroke (width 0) (type default))
     (uuid 2e895579-2782-4c46-8599-4ed451fb43a2)
   )
-  (wire (pts (xy 312.42 54.61) (xy 312.42 57.15))
+  (wire (pts (xy 311.15 54.61) (xy 311.15 57.15))
     (stroke (width 0) (type default))
     (uuid 3068d88e-30a4-4134-be9d-9533c5446b74)
   )
@@ -2403,7 +2403,7 @@
     (stroke (width 0) (type default))
     (uuid 3875d8c6-ce4e-4d95-b2af-46b1c018f5f4)
   )
-  (wire (pts (xy 340.36 44.45) (xy 327.66 44.45))
+  (wire (pts (xy 345.44 44.45) (xy 332.74 44.45))
     (stroke (width 0) (type default))
     (uuid 38e20c34-4bfa-4c5d-81d8-fd30a02f6be1)
   )
@@ -2419,7 +2419,7 @@
     (stroke (width 0) (type default))
     (uuid 3b2ce1c0-565e-4e4c-8966-0c494be806d9)
   )
-  (wire (pts (xy 340.36 55.88) (xy 340.36 58.42))
+  (wire (pts (xy 345.44 55.88) (xy 345.44 58.42))
     (stroke (width 0) (type default))
     (uuid 3b4c8e1a-de02-4942-b65e-ade0167fa8e0)
   )
@@ -2543,7 +2543,7 @@
     (stroke (width 0) (type default))
     (uuid 508f7c2a-c297-4be0-846c-128e12a617a3)
   )
-  (wire (pts (xy 367.03 36.83) (xy 367.03 38.1))
+  (wire (pts (xy 369.57 36.83) (xy 369.57 38.1))
     (stroke (width 0) (type default))
     (uuid 513f0c82-4e46-4b88-b27a-eb41bf19aaae)
   )
@@ -2607,7 +2607,7 @@
     (stroke (width 0) (type default))
     (uuid 5ee062db-ad27-47f7-aaef-2e9a8434d982)
   )
-  (wire (pts (xy 327.66 55.88) (xy 327.66 57.15))
+  (wire (pts (xy 332.74 55.88) (xy 332.74 57.15))
     (stroke (width 0) (type default))
     (uuid 5fcd55a1-d495-4b37-8709-3e23027886fc)
   )
@@ -2623,7 +2623,7 @@
     (stroke (width 0) (type default))
     (uuid 6231ed00-f720-4fa7-804e-b521aee01a16)
   )
-  (wire (pts (xy 327.66 44.45) (xy 327.66 48.26))
+  (wire (pts (xy 332.74 44.45) (xy 332.74 48.26))
     (stroke (width 0) (type default))
     (uuid 64d9d331-132f-4eec-a12a-3e845a722097)
   )
@@ -2683,7 +2683,7 @@
     (stroke (width 0) (type default))
     (uuid 6d3d4635-4804-4d75-aa10-f2cd5a503faf)
   )
-  (wire (pts (xy 367.03 53.34) (xy 367.03 55.88))
+  (wire (pts (xy 369.57 53.34) (xy 369.57 55.88))
     (stroke (width 0) (type default))
     (uuid 6f5a2c1f-c7be-4ac6-9584-d69035330e15)
   )
@@ -2727,7 +2727,7 @@
     (stroke (width 0) (type default))
     (uuid 75c540d3-98c2-40aa-b7bf-afb0c13b9b3a)
   )
-  (wire (pts (xy 327.66 57.15) (xy 327.66 58.42))
+  (wire (pts (xy 332.74 57.15) (xy 332.74 58.42))
     (stroke (width 0) (type default))
     (uuid 75d71903-7c6b-4c38-9b9d-81f447e8e700)
   )
@@ -2747,7 +2747,7 @@
     (stroke (width 0) (type default))
     (uuid 7aaf6e42-999b-404c-94b7-dd1a77fe1bd0)
   )
-  (wire (pts (xy 327.66 41.91) (xy 327.66 44.45))
+  (wire (pts (xy 332.74 41.91) (xy 332.74 44.45))
     (stroke (width 0) (type default))
     (uuid 7ac2df29-5e38-4a16-a1cd-e52612acb52d)
   )
@@ -2947,7 +2947,7 @@
     (stroke (width 0) (type default))
     (uuid a825ecfa-5911-4441-bace-9229207d02ec)
   )
-  (wire (pts (xy 312.42 43.18) (xy 312.42 44.45))
+  (wire (pts (xy 311.15 43.18) (xy 311.15 44.45))
     (stroke (width 0) (type default))
     (uuid a8fb8b37-0972-45e5-aa1a-1377a8b33c5a)
   )
@@ -3007,7 +3007,7 @@
     (stroke (width 0) (type default))
     (uuid b4e6e1f5-0d70-42d7-a9f2-9217553ddfbd)
   )
-  (wire (pts (xy 381 52.07) (xy 381 49.53))
+  (wire (pts (xy 383.54 52.07) (xy 383.54 49.53))
     (stroke (width 0) (type default))
     (uuid b4e9abc2-58d8-4a7b-b84e-e4eb142fd2fb)
   )
@@ -3095,7 +3095,7 @@
     (stroke (width 0) (type default))
     (uuid c4bfd850-8ef7-4c07-af89-1836a9fabeb9)
   )
-  (wire (pts (xy 309.88 44.45) (xy 312.42 44.45))
+  (wire (pts (xy 308.61 44.45) (xy 311.15 44.45))
     (stroke (width 0) (type default))
     (uuid c5326ff6-c736-4349-b5ed-5b071376b4f7)
   )
@@ -3115,7 +3115,7 @@
     (stroke (width 0) (type default))
     (uuid cd6c204f-fe6e-4d1e-94d4-d2553fc45e86)
   )
-  (wire (pts (xy 367.03 35.56) (xy 367.03 36.83))
+  (wire (pts (xy 369.57 35.56) (xy 369.57 36.83))
     (stroke (width 0) (type default))
     (uuid ce8175f8-67da-4568-92c1-4e9d655aa686)
   )
@@ -3167,7 +3167,7 @@
     (stroke (width 0) (type default))
     (uuid dd81c107-fe60-4920-8679-ccfb82060521)
   )
-  (wire (pts (xy 367.03 36.83) (xy 381 36.83))
+  (wire (pts (xy 369.57 36.83) (xy 383.54 36.83))
     (stroke (width 0) (type default))
     (uuid de09dcf3-bbb2-4325-8838-b79aea4fe012)
   )
@@ -3231,7 +3231,7 @@
     (stroke (width 0) (type default))
     (uuid f3f4fff1-dc94-469f-ace0-6d1d2edfd36f)
   )
-  (wire (pts (xy 312.42 44.45) (xy 327.66 44.45))
+  (wire (pts (xy 311.15 44.45) (xy 332.74 44.45))
     (stroke (width 0) (type default))
     (uuid f456e621-73cc-4efa-b3f4-cef478b4b40b)
   )
@@ -3386,7 +3386,8 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 80e67346-f3d3-4c12-9184-106fe0a7dc89)
   )
-  (text "Microcontroller circuit" (at 19.05 22.86 0)
+  (text "Microcontroller circuit (USB to Serial conversion, AT command parsing, RTTY signal generation)"
+    (at 19.05 22.86 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 94716982-7907-49ac-8002-91350ec4ac62)
   )
@@ -3528,10 +3529,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "VIRTUAL GROUND" (shape passive) (at 309.88 44.45 180) (fields_autoplaced)
+  (global_label "VIRTUAL GROUND" (shape passive) (at 308.61 44.45 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid c8da30de-7dd5-4681-b3a0-f21895ca756b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 291.8588 44.45 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 290.5888 44.45 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -3569,26 +3570,26 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 327.66 31.75 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 332.74 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07572ae5-b833-419b-b42e-890582818369)
-    (property "Reference" "#PWR047" (at 327.66 35.56 0)
+    (property "Reference" "#PWR042" (at 332.74 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 327.66 26.67 0)
+    (property "Value" "+5V" (at 332.74 26.67 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 327.66 31.75 0)
+    (property "Footprint" "" (at 332.74 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 327.66 31.75 0)
+    (property "Datasheet" "" (at 332.74 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5cce994c-6e28-4f7c-9f19-8b15a309523f))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -3597,7 +3598,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 121.92 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 07a06c39-a372-41b8-98b6-523f7e4b6bf0)
-    (property "Reference" "C6" (at 125.73 41.021 0)
+    (property "Reference" "C3" (at 125.73 41.021 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 125.73 43.561 0)
@@ -3614,7 +3615,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C6") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -3623,7 +3624,7 @@
   (symbol (lib_id "power:GND") (at 121.92 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08a7ffa8-16d9-4d52-93d5-77114f7a5fe8)
-    (property "Reference" "#PWR049" (at 121.92 54.61 0)
+    (property "Reference" "#PWR017" (at 121.92 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 53.34 0)
@@ -3639,7 +3640,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -3648,7 +3649,7 @@
   (symbol (lib_id "power:GND") (at 228.6 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 09232986-2f72-4189-a61a-e534587cb46e)
-    (property "Reference" "#PWR026" (at 228.6 72.39 0)
+    (property "Reference" "#PWR035" (at 228.6 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.6 71.12 0)
@@ -3664,7 +3665,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR035") (unit 1)
         )
       )
     )
@@ -3673,7 +3674,7 @@
   (symbol (lib_id "power:GND") (at 229.87 214.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0a05acaa-7895-4580-b628-49e9b370d327)
-    (property "Reference" "#PWR040" (at 229.87 220.98 0)
+    (property "Reference" "#PWR038" (at 229.87 220.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 229.87 219.71 0)
@@ -3689,7 +3690,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR038") (unit 1)
         )
       )
     )
@@ -3698,7 +3699,7 @@
   (symbol (lib_id "power:GND") (at 69.85 43.18 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0e82f83f-b3ed-4827-990b-9428c70cee16)
-    (property "Reference" "#PWR013" (at 69.85 36.83 0)
+    (property "Reference" "#PWR012" (at 69.85 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 38.1 0)
@@ -3714,7 +3715,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -3723,7 +3724,7 @@
   (symbol (lib_id "power:GND") (at 196.85 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10638dd7-f74b-4bc4-aebb-b7564e53b7b6)
-    (property "Reference" "#PWR027" (at 196.85 138.43 0)
+    (property "Reference" "#PWR031" (at 196.85 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.85 137.16 0)
@@ -3739,7 +3740,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -3748,7 +3749,7 @@
   (symbol (lib_id "power:+5V") (at 201.93 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 10b2a90d-63dc-4ab7-b1e7-5e1e373dd1a1)
-    (property "Reference" "#PWR039" (at 201.93 194.31 0)
+    (property "Reference" "#PWR032" (at 201.93 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 201.93 185.42 0)
@@ -3764,7 +3765,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -3773,7 +3774,7 @@
   (symbol (lib_id "power:GND") (at 201.93 265.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 10c7f0d5-b88f-49b5-b59c-3c47c84aec60)
-    (property "Reference" "#PWR036" (at 201.93 271.78 0)
+    (property "Reference" "#PWR033" (at 201.93 271.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 201.93 270.51 0)
@@ -3789,7 +3790,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR033") (unit 1)
         )
       )
     )
@@ -3798,7 +3799,7 @@
   (symbol (lib_id "power:+5V") (at 185.42 198.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 11847873-1d7a-423f-9526-fe94f9cb4876)
-    (property "Reference" "#PWR037" (at 185.42 201.93 0)
+    (property "Reference" "#PWR024" (at 185.42 201.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 185.42 193.04 0)
@@ -3814,7 +3815,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -3823,7 +3824,7 @@
   (symbol (lib_id "power:+5V") (at 67.31 247.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 163a4f7a-a286-43bb-a9b3-23d49948f4aa)
-    (property "Reference" "#PWR09" (at 67.31 251.46 0)
+    (property "Reference" "#PWR011" (at 67.31 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 67.31 242.57 0)
@@ -3839,7 +3840,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -3874,7 +3875,7 @@
   (symbol (lib_id "Amplifier_Operational:MCP6022") (at 356.87 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1b165400-2d1b-4cf0-825b-6f83b8843237)
-    (property "Reference" "U4" (at 356.87 99.06 0)
+    (property "Reference" "U5" (at 356.87 99.06 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP6022" (at 356.87 101.6 0)
@@ -3897,7 +3898,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "U4") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -3906,7 +3907,7 @@
   (symbol (lib_id "power:+5V") (at 190.5 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1cc085dd-92e7-4873-afc3-c979b39d1e62)
-    (property "Reference" "#PWR022" (at 190.5 45.72 0)
+    (property "Reference" "#PWR028" (at 190.5 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 190.5 36.83 0)
@@ -3922,7 +3923,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -3931,7 +3932,7 @@
   (symbol (lib_id "power:GND") (at 105.41 209.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1cd8bce7-6a70-4d33-a4a2-506d552cc9e4)
-    (property "Reference" "#PWR019" (at 105.41 215.9 0)
+    (property "Reference" "#PWR016" (at 105.41 215.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 105.41 214.63 0)
@@ -3947,7 +3948,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -4017,26 +4018,26 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 367.03 35.56 0) (unit 1)
+  (symbol (lib_id "power:+5V") (at 369.57 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 21dd112b-7333-40f9-bf5f-d99ed1ea4150)
-    (property "Reference" "#PWR043" (at 367.03 39.37 0)
+    (property "Reference" "#PWR045" (at 369.57 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5V" (at 367.03 30.48 0)
+    (property "Value" "+5V" (at 369.57 30.48 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 367.03 35.56 0)
+    (property "Footprint" "" (at 369.57 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 367.03 35.56 0)
+    (property "Datasheet" "" (at 369.57 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 66e5e52d-7297-4e66-89b5-a5d99b41d4d4))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -4071,7 +4072,7 @@
   (symbol (lib_id "Device:C") (at 170.18 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 23d33ef9-fe1d-4a06-b670-8bdb77b1ff38)
-    (property "Reference" "C2" (at 173.99 85.09 0)
+    (property "Reference" "C5" (at 173.99 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22pF" (at 173.99 87.63 0)
@@ -4088,7 +4089,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C2") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -4097,7 +4098,7 @@
   (symbol (lib_id "power:+5V") (at 105.41 190.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 242bd809-e25d-4d5f-aec3-082d63c2bfa2)
-    (property "Reference" "#PWR018" (at 105.41 194.31 0)
+    (property "Reference" "#PWR015" (at 105.41 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 105.41 185.42 0)
@@ -4113,7 +4114,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -4122,7 +4123,7 @@
   (symbol (lib_id "StockLib:C_100nF") (at 83.82 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2ae4aca9-9d2f-49cf-9114-887ef47e60cf)
-    (property "Reference" "C1" (at 87.63 60.96 0)
+    (property "Reference" "C2" (at 87.63 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470nF" (at 87.63 63.5 0)
@@ -4139,7 +4140,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C1") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -4148,7 +4149,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 331.47 171.45 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2c45914a-c687-4f87-87ad-68dcc91b21ef)
-    (property "Reference" "C19" (at 332.359 163.83 90)
+    (property "Reference" "C16" (at 332.359 163.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10uF" (at 332.359 166.37 90)
@@ -4165,7 +4166,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C19") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -4174,7 +4175,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 350.52 201.93 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2dd984e7-9e48-4c56-90aa-7848d87e7af1)
-    (property "Reference" "R23" (at 350.52 195.58 90)
+    (property "Reference" "R21" (at 350.52 195.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 350.52 198.12 90)
@@ -4191,7 +4192,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R23") (unit 1)
+          (reference "R21") (unit 1)
         )
       )
     )
@@ -4284,7 +4285,7 @@
   (symbol (lib_id "Device:C") (at 228.6 60.96 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 33c55064-8b63-4eed-9919-c9a365fa9d09)
-    (property "Reference" "C8" (at 232.41 59.69 0)
+    (property "Reference" "C11" (at 232.41 59.69 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10nF" (at 232.41 62.23 0)
@@ -4301,7 +4302,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C8") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -4348,7 +4349,7 @@
   (symbol (lib_id "power:GND") (at 45.72 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 362e13b4-aa82-4591-a308-d0d617364ae0)
-    (property "Reference" "#PWR01" (at 45.72 99.06 0)
+    (property "Reference" "#PWR04" (at 45.72 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 45.72 97.79 0)
@@ -4364,7 +4365,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -4373,7 +4374,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 356.87 125.73 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3bac1cd9-9629-4877-883c-6d033f81071b)
-    (property "Reference" "R17" (at 356.87 119.38 90)
+    (property "Reference" "R22" (at 356.87 119.38 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "15k" (at 356.87 121.92 90)
@@ -4390,25 +4391,25 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R17") (unit 1)
+          (reference "R22") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "StockLib:R_10k") (at 327.66 38.1 180) (unit 1)
+  (symbol (lib_id "StockLib:R_10k") (at 332.74 38.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3cfa7de2-4c0a-407f-8a57-a4ed1f6220ce)
-    (property "Reference" "R18" (at 330.2 36.83 0)
+    (property "Reference" "R15" (at 335.28 36.83 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10k" (at 330.2 39.37 0)
+    (property "Value" "10k" (at 335.28 39.37 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "StockLib:R_10k_Axial_DIN0207" (at 329.438 38.1 90)
+    (property "Footprint" "StockLib:R_10k_Axial_DIN0207" (at 334.518 38.1 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 327.66 38.1 0)
+    (property "Datasheet" "~" (at 332.74 38.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 97d1b7a0-7b23-4ec7-b9fb-bddd08600ac5))
@@ -4416,32 +4417,32 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R18") (unit 1)
+          (reference "R15") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint") (at 312.42 43.18 0) (unit 1)
+  (symbol (lib_id "Connector:TestPoint") (at 311.15 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d461554-361f-4b4c-93a3-235e76648887)
-    (property "Reference" "TP3" (at 314.96 38.608 0)
+    (property "Reference" "TP1" (at 313.69 38.608 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (at 314.96 41.148 0)
+    (property "Value" "Virtual Ground" (at 313.69 41.148 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm" (at 317.5 43.18 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 316.23 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 317.5 43.18 0)
+    (property "Datasheet" "~" (at 316.23 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2ad76946-31f5-4ad6-bc78-939b0ffa933a))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "TP3") (unit 1)
+          (reference "TP1") (unit 1)
         )
       )
     )
@@ -4450,13 +4451,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 367.03 187.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4047601e-480b-4f45-88ed-be7ff616dcb9)
-    (property "Reference" "TP2" (at 369.57 183.388 0)
+    (property "Reference" "TP4" (at 369.57 183.388 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (at 369.57 185.928 0)
+    (property "Value" "Buffered Audio" (at 369.57 185.928 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm" (at 372.11 187.96 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 372.11 187.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 372.11 187.96 0)
@@ -4466,7 +4467,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "TP2") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
     )
@@ -4475,7 +4476,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 332.74 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41f907a2-f349-4f3d-8001-b23341859d54)
-    (property "Reference" "R16" (at 335.28 120.65 0)
+    (property "Reference" "R19" (at 335.28 120.65 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 335.28 123.19 0)
@@ -4492,7 +4493,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R16") (unit 1)
+          (reference "R19") (unit 1)
         )
       )
     )
@@ -4501,7 +4502,7 @@
   (symbol (lib_id "StockLib:C_100nF") (at 69.85 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 43ce6f39-bd19-4497-afe2-deb8b6e783c1)
-    (property "Reference" "C5" (at 73.66 48.26 0)
+    (property "Reference" "C1" (at 73.66 48.26 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 73.66 50.8 0)
@@ -4518,7 +4519,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C5") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -4605,7 +4606,7 @@
   (symbol (lib_id "power:GND") (at 251.46 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4f6b070e-915a-46c2-951f-151e9605f29e)
-    (property "Reference" "#PWR033" (at 251.46 72.39 0)
+    (property "Reference" "#PWR040" (at 251.46 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 251.46 71.12 0)
@@ -4621,7 +4622,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR033") (unit 1)
+          (reference "#PWR040") (unit 1)
         )
       )
     )
@@ -4630,7 +4631,7 @@
   (symbol (lib_id "StockLib:LED 5mm YELLOW") (at 66.04 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 512f68d8-0ee9-4bf0-901e-0f0ae59f0cb3)
-    (property "Reference" "D2" (at 64.4525 134.62 0)
+    (property "Reference" "D1" (at 64.4525 134.62 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LED 5mm YELLOW" (at 64.4525 132.08 0)
@@ -4647,7 +4648,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "D2") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -4708,7 +4709,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 335.28 181.61 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 592eb26b-bfcc-4de0-a98e-bc7b5d2031f9)
-    (property "Reference" "R21" (at 337.82 180.34 0)
+    (property "Reference" "R20" (at 337.82 180.34 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 337.82 182.88 0)
@@ -4725,7 +4726,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R21") (unit 1)
+          (reference "R20") (unit 1)
         )
       )
     )
@@ -4760,7 +4761,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 185.42 214.63 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f3401ea-79ab-49a0-9286-b7cba27d24ee)
-    (property "Reference" "R13" (at 187.96 213.36 0)
+    (property "Reference" "R8" (at 187.96 213.36 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 187.96 215.9 0)
@@ -4777,7 +4778,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R13") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -4786,7 +4787,7 @@
   (symbol (lib_id "StockLib:2x5 Pin Header Connector Female") (at 185.42 124.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f3663c9-3cae-443e-9a83-5cce30456e9f)
-    (property "Reference" "U5" (at 185.42 111.76 0)
+    (property "Reference" "J3" (at 185.42 111.76 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2x5 Pin Header Connector Female" (at 185.42 114.3 0)
@@ -4835,7 +4836,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "U5") (unit 1)
+          (reference "J3") (unit 1)
         )
       )
     )
@@ -4844,7 +4845,7 @@
   (symbol (lib_id "power:GND") (at 228.6 109.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6276150f-ee7e-4fd2-9a30-32b1162c6dc3)
-    (property "Reference" "#PWR031" (at 228.6 115.57 0)
+    (property "Reference" "#PWR037" (at 228.6 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 228.6 114.3 0)
@@ -4860,7 +4861,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR031") (unit 1)
+          (reference "#PWR037") (unit 1)
         )
       )
     )
@@ -4869,7 +4870,7 @@
   (symbol (lib_id "Device:C") (at 176.53 209.55 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 644ae568-d50f-4a8b-9e43-d79b88453dbc)
-    (property "Reference" "C12" (at 176.53 201.93 90)
+    (property "Reference" "C6" (at 176.53 201.93 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100pF" (at 176.53 204.47 90)
@@ -4886,7 +4887,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C12") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -4895,7 +4896,7 @@
   (symbol (lib_id "power:GND") (at 59.69 139.7 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 65cccf94-d361-4434-b852-815c687d7647)
-    (property "Reference" "#PWR016" (at 53.34 139.7 0)
+    (property "Reference" "#PWR08" (at 53.34 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 55.88 139.7 90)
@@ -4911,7 +4912,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -4920,7 +4921,7 @@
   (symbol (lib_id "Device:C") (at 345.44 88.9 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 66a90284-cb5c-4ec8-aa2b-0f1ee01b3364)
-    (property "Reference" "C16" (at 345.44 81.28 90)
+    (property "Reference" "C18" (at 345.44 81.28 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100pF" (at 345.44 83.82 90)
@@ -4937,7 +4938,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C16") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -4978,7 +4979,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 363.22 88.9 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6ee597c7-6d99-45fc-b710-26a03665fe4a)
-    (property "Reference" "R15" (at 363.22 82.55 90)
+    (property "Reference" "R23" (at 363.22 82.55 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.5k" (at 363.22 85.09 90)
@@ -4995,7 +4996,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R15") (unit 1)
+          (reference "R23") (unit 1)
         )
       )
     )
@@ -5004,7 +5005,7 @@
   (symbol (lib_id "power:GND") (at 132.08 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6f5d50f4-910c-4eac-8b8e-61c732657626)
-    (property "Reference" "#PWR07" (at 132.08 137.16 0)
+    (property "Reference" "#PWR019" (at 132.08 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 135.89 0)
@@ -5020,7 +5021,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -5029,7 +5030,7 @@
   (symbol (lib_id "StockLib:R_470R") (at 80.01 127 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7077cbd0-4fc3-4509-a10a-cf8249b4ccc4)
-    (property "Reference" "R4" (at 80.01 133.35 90)
+    (property "Reference" "R3" (at 80.01 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 80.01 130.81 90)
@@ -5046,7 +5047,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R4") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -5055,7 +5056,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 185.42 204.47 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 70a553f0-9d4d-43c6-939e-d6e1182cc84e)
-    (property "Reference" "R12" (at 187.96 203.2 0)
+    (property "Reference" "R7" (at 187.96 203.2 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "22k" (at 187.96 205.74 0)
@@ -5072,7 +5073,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R12") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -5107,7 +5108,7 @@
   (symbol (lib_id "power:GND") (at 67.31 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 735f3599-82c0-4858-8827-468181b3c8ed)
-    (property "Reference" "#PWR04" (at 67.31 107.95 0)
+    (property "Reference" "#PWR010" (at 67.31 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 67.31 106.68 0)
@@ -5123,7 +5124,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -5132,7 +5133,7 @@
   (symbol (lib_id "power:+5V") (at 217.17 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 773241bb-6431-4599-bbdf-013bfa32ff8d)
-    (property "Reference" "#PWR032" (at 217.17 97.79 0)
+    (property "Reference" "#PWR034" (at 217.17 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 217.17 88.9 0)
@@ -5148,7 +5149,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR032") (unit 1)
+          (reference "#PWR034") (unit 1)
         )
       )
     )
@@ -5157,7 +5158,7 @@
   (symbol (lib_id "power:GND") (at 185.42 220.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7e1cf8c0-82ee-4f8b-98e9-9c1b658fe609)
-    (property "Reference" "#PWR038" (at 185.42 227.33 0)
+    (property "Reference" "#PWR025" (at 185.42 227.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 226.06 0)
@@ -5173,32 +5174,32 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR038") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 340.36 58.42 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 345.44 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 827d37f6-63f4-40a3-a612-1251f81aad1d)
-    (property "Reference" "#PWR048" (at 340.36 64.77 0)
+    (property "Reference" "#PWR044" (at 345.44 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 340.36 63.5 0)
+    (property "Value" "GND" (at 345.44 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 340.36 58.42 0)
+    (property "Footprint" "" (at 345.44 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 340.36 58.42 0)
+    (property "Datasheet" "" (at 345.44 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b3d94d5c-e084-452e-8f7d-2456b4a663bf))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -5207,7 +5208,7 @@
   (symbol (lib_id "power:+5V") (at 53.34 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 838acfd6-7a69-4414-ba04-dd21c4b736c7)
-    (property "Reference" "#PWR06" (at 53.34 60.96 0)
+    (property "Reference" "#PWR05" (at 53.34 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 53.34 52.07 0)
@@ -5223,7 +5224,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -5232,7 +5233,7 @@
   (symbol (lib_id "power:GND") (at 177.8 31.75 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83c3db58-5fc3-400c-819d-b661e1bbcb64)
-    (property "Reference" "#PWR024" (at 177.8 25.4 0)
+    (property "Reference" "#PWR022" (at 177.8 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 26.67 0)
@@ -5248,7 +5249,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -5257,7 +5258,7 @@
   (symbol (lib_id "StockLib:R_470R") (at 171.45 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83d309a3-4796-4e2c-a01b-b89db6824f87)
-    (property "Reference" "R7" (at 171.45 143.51 90)
+    (property "Reference" "R6" (at 171.45 143.51 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 171.45 146.05 90)
@@ -5274,7 +5275,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R7") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -5283,7 +5284,7 @@
   (symbol (lib_id "power:+5V") (at 45.72 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 83d4a9c6-3906-48a1-986f-2e795e7aafdd)
-    (property "Reference" "#PWR014" (at 45.72 80.01 0)
+    (property "Reference" "#PWR03" (at 45.72 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 45.72 71.12 0)
@@ -5299,7 +5300,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -5334,7 +5335,7 @@
   (symbol (lib_id "power:GND") (at 185.42 259.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 88ef2d83-1421-4145-802f-126e2faf6c19)
-    (property "Reference" "#PWR034" (at 185.42 265.43 0)
+    (property "Reference" "#PWR027" (at 185.42 265.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 185.42 264.16 0)
@@ -5350,7 +5351,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -5359,7 +5360,7 @@
   (symbol (lib_id "power:+5V") (at 33.02 186.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8940b925-6a5b-4017-8853-71342ff3e27c)
-    (property "Reference" "#PWR021" (at 33.02 190.5 0)
+    (property "Reference" "#PWR02" (at 33.02 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 33.02 181.61 0)
@@ -5375,7 +5376,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -5410,7 +5411,7 @@
   (symbol (lib_id "power:GND") (at 59.69 127 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8c6db5be-d210-439a-b261-40c4a685a75e)
-    (property "Reference" "#PWR017" (at 53.34 127 0)
+    (property "Reference" "#PWR07" (at 53.34 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 55.88 127 90)
@@ -5426,7 +5427,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -5435,7 +5436,7 @@
   (symbol (lib_id "Memory_EEPROM:25LCxxx") (at 228.6 100.33 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8dda1ee8-5e40-45c6-b13e-06898f18a9a6)
-    (property "Reference" "U6" (at 230.7941 90.17 0)
+    (property "Reference" "U4" (at 230.7941 90.17 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "25LC1024" (at 230.7941 92.71 0)
@@ -5458,32 +5459,32 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "U6") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 327.66 58.42 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 332.74 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8de45aae-8457-472d-9e99-4c3fe6226fa2)
-    (property "Reference" "#PWR046" (at 327.66 64.77 0)
+    (property "Reference" "#PWR043" (at 332.74 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 327.66 63.5 0)
+    (property "Value" "GND" (at 332.74 63.5 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 327.66 58.42 0)
+    (property "Footprint" "" (at 332.74 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 327.66 58.42 0)
+    (property "Datasheet" "" (at 332.74 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid a4b51a04-14aa-4716-ba1e-125481568339))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -5492,7 +5493,7 @@
   (symbol (lib_id "StockLib:LED 5mm YELLOW") (at 66.04 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9032044b-f8fe-4d79-b062-0efc670d79e4)
-    (property "Reference" "D1" (at 64.4525 147.32 0)
+    (property "Reference" "D2" (at 64.4525 147.32 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "LED 5mm GREEN" (at 64.4525 144.78 0)
@@ -5509,32 +5510,32 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "D1") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Connector:TestPoint") (at 312.42 54.61 0) (unit 1)
+  (symbol (lib_id "Connector:TestPoint") (at 311.15 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9161fefb-cc4e-4bdf-ba0f-bfd3f38d2590)
-    (property "Reference" "TP4" (at 314.96 50.038 0)
+    (property "Reference" "TP2" (at 313.69 50.038 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (at 314.96 52.578 0)
+    (property "Value" "GND" (at 313.69 52.578 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm" (at 317.5 54.61 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 316.23 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 317.5 54.61 0)
+    (property "Datasheet" "~" (at 316.23 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 7577b6d1-05c8-42a8-a46c-3a35177cfff6))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "TP4") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
     )
@@ -5569,7 +5570,7 @@
   (symbol (lib_id "power:GND") (at 190.5 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95ac8121-97c0-4f5e-8a19-6225b40b591a)
-    (property "Reference" "#PWR023" (at 190.5 72.39 0)
+    (property "Reference" "#PWR029" (at 190.5 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 190.5 71.12 0)
@@ -5585,7 +5586,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -5594,7 +5595,7 @@
   (symbol (lib_id "power:GND") (at 139.7 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95f6111c-33dd-4ef9-98e1-60da2fc2937c)
-    (property "Reference" "#PWR012" (at 139.7 54.61 0)
+    (property "Reference" "#PWR020" (at 139.7 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 139.7 53.34 0)
@@ -5610,7 +5611,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -5654,19 +5655,19 @@
     )
   )
 
-  (symbol (lib_id "StockLib:C_100nF") (at 381 45.72 0) (unit 1)
+  (symbol (lib_id "StockLib:C_100nF") (at 383.54 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9786b423-9fa6-493a-a248-9bed7a9478ff)
-    (property "Reference" "C18" (at 384.81 44.45 0)
+    (property "Reference" "C19" (at 387.35 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "100nF" (at 384.81 46.99 0)
+    (property "Value" "100nF" (at 387.35 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "StockLib:C_100nF_L7.0mm_W2.5mm_P5.00mm" (at 381.9652 49.53 0)
+    (property "Footprint" "StockLib:C_100nF_L7.0mm_W2.5mm_P5.00mm" (at 384.5052 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 381 45.72 0)
+    (property "Datasheet" "~" (at 383.54 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 37c1a715-422d-416a-901e-da021482ea0a))
@@ -5674,7 +5675,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C18") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -5683,7 +5684,7 @@
   (symbol (lib_id "power:+5V") (at 185.42 236.22 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 97a2c122-1e7d-4c32-a0d9-e66ff0105f32)
-    (property "Reference" "#PWR035" (at 185.42 240.03 0)
+    (property "Reference" "#PWR026" (at 185.42 240.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 185.42 231.14 0)
@@ -5699,7 +5700,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -5708,7 +5709,7 @@
   (symbol (lib_id "power:GND") (at 83.82 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 99479e1a-93c7-4ddc-b708-c3d5de29cede)
-    (property "Reference" "#PWR05" (at 83.82 73.66 0)
+    (property "Reference" "#PWR013" (at 83.82 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 72.39 0)
@@ -5724,32 +5725,32 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 367.03 55.88 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 369.57 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9d16a2ce-c43c-477c-80f9-a8738e8f8c95)
-    (property "Reference" "#PWR042" (at 367.03 62.23 0)
+    (property "Reference" "#PWR046" (at 369.57 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 367.03 60.96 0)
+    (property "Value" "GND" (at 369.57 60.96 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 367.03 55.88 0)
+    (property "Footprint" "" (at 369.57 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 367.03 55.88 0)
+    (property "Datasheet" "" (at 369.57 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 1d97fe3f-8205-408e-9b99-cf82965608e7))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -5758,7 +5759,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 327.66 187.96 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a7d48bf7-874b-4b8e-9857-d2243b736716)
-    (property "Reference" "R24" (at 327.66 181.61 90)
+    (property "Reference" "R17" (at 327.66 181.61 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2k" (at 327.66 184.15 90)
@@ -5775,7 +5776,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R24") (unit 1)
+          (reference "R17") (unit 1)
         )
       )
     )
@@ -5784,7 +5785,7 @@
   (symbol (lib_id "StockLib:C_100nF") (at 177.8 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a944b967-bf00-4cb6-9cd2-db98ac3d6ed2)
-    (property "Reference" "C7" (at 181.61 36.83 0)
+    (property "Reference" "C8" (at 181.61 36.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 181.61 39.37 0)
@@ -5801,7 +5802,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C7") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -5895,7 +5896,7 @@
   (symbol (lib_id "power:+5V") (at 67.31 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b4b4db15-65ea-4b7f-bbc7-6829ee5e88e3)
-    (property "Reference" "#PWR03" (at 67.31 67.31 0)
+    (property "Reference" "#PWR09" (at 67.31 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 67.31 58.42 0)
@@ -5911,7 +5912,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -5946,7 +5947,7 @@
   (symbol (lib_id "power:GND") (at 26.67 265.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bce79f04-9d1c-44d1-9685-1fec3acdfadb)
-    (property "Reference" "#PWR010" (at 26.67 271.78 0)
+    (property "Reference" "#PWR01" (at 26.67 271.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 26.67 270.51 0)
@@ -5962,7 +5963,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -5971,7 +5972,7 @@
   (symbol (lib_id "power:GND") (at 55.88 186.69 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c1602fbd-06b9-46ea-9e14-559c42e25017)
-    (property "Reference" "#PWR020" (at 62.23 186.69 0)
+    (property "Reference" "#PWR06" (at 62.23 186.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 59.69 186.69 90)
@@ -5987,7 +5988,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -6028,7 +6029,7 @@
   (symbol (lib_id "power:GND") (at 176.53 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6bee16d-51da-42e5-a559-4935a399e102)
-    (property "Reference" "#PWR011" (at 176.53 99.06 0)
+    (property "Reference" "#PWR021" (at 176.53 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 176.53 97.79 0)
@@ -6044,7 +6045,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -6053,7 +6054,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 242.57 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c7bf6e35-8cfa-4eb6-8e0d-7cc8b6c6d042)
-    (property "Reference" "C10" (at 241.681 46.99 90)
+    (property "Reference" "C13" (at 241.681 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10uF" (at 241.681 49.53 90)
@@ -6070,7 +6071,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C10") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -6079,7 +6080,7 @@
   (symbol (lib_id "power:GND") (at 177.8 52.07 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c7ce3fd9-2ed6-4b41-b226-f1ad499ff136)
-    (property "Reference" "#PWR025" (at 171.45 52.07 0)
+    (property "Reference" "#PWR023" (at 171.45 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 173.99 52.07 90)
@@ -6095,7 +6096,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -6104,7 +6105,7 @@
   (symbol (lib_id "power:GND") (at 248.92 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d040ddce-5c6b-4893-a5d0-4d5c5680f84d)
-    (property "Reference" "#PWR029" (at 248.92 105.41 0)
+    (property "Reference" "#PWR039" (at 248.92 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 248.92 104.14 0)
@@ -6120,7 +6121,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -6129,7 +6130,7 @@
   (symbol (lib_id "power:+5V") (at 228.6 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d1e488c3-d8e9-4a87-9718-47e019611ed1)
-    (property "Reference" "#PWR030" (at 228.6 90.17 0)
+    (property "Reference" "#PWR036" (at 228.6 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 228.6 81.28 0)
@@ -6145,7 +6146,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR036") (unit 1)
         )
       )
     )
@@ -6178,19 +6179,19 @@
     )
   )
 
-  (symbol (lib_id "Amplifier_Operational:MCP6022") (at 369.57 45.72 0) (unit 3)
+  (symbol (lib_id "Amplifier_Operational:MCP6022") (at 372.11 45.72 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d60976e1-7d80-4b60-89b6-627284a0ce6e)
-    (property "Reference" "U4" (at 368.3 44.45 0)
+    (property "Reference" "U5" (at 370.84 44.45 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "MCP6022" (at 368.3 46.99 0)
+    (property "Value" "MCP6022" (at 370.84 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 369.57 45.72 0)
+    (property "Footprint" "Package_DIP:DIP-8_W7.62mm" (at 372.11 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf" (at 369.57 45.72 0)
+    (property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf" (at 372.11 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 86ec9a83-02dc-447b-aeb7-07386e81ef8e))
@@ -6204,7 +6205,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "U4") (unit 3)
+          (reference "U5") (unit 3)
         )
       )
     )
@@ -6213,7 +6214,7 @@
   (symbol (lib_id "power:+5V") (at 132.08 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d68c34af-75e2-48fb-9481-0a4a6f4a5067)
-    (property "Reference" "#PWR08" (at 132.08 36.83 0)
+    (property "Reference" "#PWR018" (at 132.08 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 132.08 27.94 0)
@@ -6229,7 +6230,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -6238,7 +6239,7 @@
   (symbol (lib_id "power:GND") (at 191.77 149.86 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d71c0b4b-e199-41fc-ae77-c87a0c5ad96a)
-    (property "Reference" "#PWR028" (at 198.12 149.86 0)
+    (property "Reference" "#PWR030" (at 198.12 149.86 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 195.58 149.86 90)
@@ -6254,7 +6255,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -6263,7 +6264,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 176.53 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d93fa636-4419-4546-8890-c8ecc4354746)
-    (property "Reference" "C11" (at 175.641 240.03 90)
+    (property "Reference" "C7" (at 175.641 240.03 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10uF" (at 175.641 242.57 90)
@@ -6280,7 +6281,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C11") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -6289,7 +6290,7 @@
   (symbol (lib_id "Device:C") (at 182.88 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9d59003-b6fd-4d5a-b755-15923141a750)
-    (property "Reference" "C3" (at 186.69 85.09 0)
+    (property "Reference" "C9" (at 186.69 85.09 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22pF" (at 186.69 87.63 0)
@@ -6306,7 +6307,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C3") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -6315,7 +6316,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 327.66 201.93 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid deac1e1a-2cea-4824-84b6-814c90c54893)
-    (property "Reference" "R22" (at 327.66 195.58 90)
+    (property "Reference" "R18" (at 327.66 195.58 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 327.66 198.12 90)
@@ -6332,7 +6333,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R22") (unit 1)
+          (reference "R18") (unit 1)
         )
       )
     )
@@ -6367,7 +6368,7 @@
   (symbol (lib_id "Device:C") (at 229.87 208.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e556aab3-bef8-4074-9413-f904fccd09c1)
-    (property "Reference" "C14" (at 233.68 207.01 0)
+    (property "Reference" "C12" (at 233.68 207.01 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1nF" (at 233.68 209.55 0)
@@ -6384,25 +6385,25 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C14") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:C_Polarized") (at 340.36 52.07 0) (unit 1)
+  (symbol (lib_id "Device:C_Polarized") (at 345.44 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e5f04e21-d0d8-4eb6-9fdd-3325067e3c3c)
-    (property "Reference" "C17" (at 344.17 49.911 0)
+    (property "Reference" "C17" (at 349.25 49.911 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (at 344.17 52.451 0)
+    (property "Value" "10uF" (at 349.25 52.451 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 341.3252 55.88 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" (at 346.4052 55.88 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 340.36 52.07 0)
+    (property "Datasheet" "~" (at 345.44 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 291e5ff4-bad2-4526-8f57-a7a11d305b05))
@@ -6419,7 +6420,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 251.46 60.96 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e6489ec6-61ef-4e2e-bc5f-503fbb16f3a8)
-    (property "Reference" "R8" (at 254 59.69 0)
+    (property "Reference" "R13" (at 254 59.69 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10k" (at 254 62.23 0)
@@ -6436,7 +6437,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R8") (unit 1)
+          (reference "R13") (unit 1)
         )
       )
     )
@@ -6445,7 +6446,7 @@
   (symbol (lib_id "power:GND") (at 104.14 257.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e76ed302-2ed6-4600-a861-f1ee29fb614d)
-    (property "Reference" "#PWR045" (at 104.14 264.16 0)
+    (property "Reference" "#PWR014" (at 104.14 264.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 104.14 262.89 0)
@@ -6461,7 +6462,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -6470,7 +6471,7 @@
   (symbol (lib_id "StockLib:C_100nF") (at 213.36 201.93 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ebc383f2-fe1f-4c47-afa9-ece59afa542b)
-    (property "Reference" "C13" (at 213.36 194.31 90)
+    (property "Reference" "C10" (at 213.36 194.31 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 213.36 196.85 90)
@@ -6487,7 +6488,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C13") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -6496,13 +6497,13 @@
   (symbol (lib_id "Connector:TestPoint") (at 379.73 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ebfc8edd-e2ba-46ab-8da9-cd4c86cea684)
-    (property "Reference" "TP1" (at 382.27 102.108 0)
+    (property "Reference" "TP3" (at 382.27 102.108 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "TestPoint" (at 382.27 104.648 0)
+    (property "Value" "Carrier Wave" (at 382.27 104.648 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm" (at 384.81 106.68 0)
+    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 384.81 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 384.81 106.68 0)
@@ -6512,7 +6513,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "TP1") (unit 1)
+          (reference "TP3") (unit 1)
         )
       )
     )
@@ -6521,7 +6522,7 @@
   (symbol (lib_id "Connector:Conn_Coaxial") (at 259.08 201.93 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ec5c4422-65ed-48f2-8ce0-2bbbf3862486)
-    (property "Reference" "J3" (at 262.89 200.9532 0)
+    (property "Reference" "J7" (at 262.89 200.9532 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Conn_Coaxial" (at 262.89 203.4932 0)
@@ -6538,7 +6539,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "J3") (unit 1)
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -6569,19 +6570,19 @@
     )
   )
 
-  (symbol (lib_id "StockLib:R_10k") (at 327.66 52.07 180) (unit 1)
+  (symbol (lib_id "StockLib:R_10k") (at 332.74 52.07 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f0c291e3-231a-43d9-85b0-fe403d5bbea8)
-    (property "Reference" "R19" (at 330.2 50.8 0)
+    (property "Reference" "R16" (at 335.28 50.8 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10k" (at 330.2 53.34 0)
+    (property "Value" "10k" (at 335.28 53.34 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "StockLib:R_10k_Axial_DIN0207" (at 329.438 52.07 90)
+    (property "Footprint" "StockLib:R_10k_Axial_DIN0207" (at 334.518 52.07 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 327.66 52.07 0)
+    (property "Datasheet" "~" (at 332.74 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 034c7d49-1ade-4000-bbd9-6e0f5f574910))
@@ -6589,7 +6590,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R19") (unit 1)
+          (reference "R16") (unit 1)
         )
       )
     )
@@ -6598,7 +6599,7 @@
   (symbol (lib_id "StockLib:R_470R") (at 80.01 139.7 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4132d1f-14ee-4b60-9a19-d1231af937c1)
-    (property "Reference" "R3" (at 80.01 146.05 90)
+    (property "Reference" "R4" (at 80.01 146.05 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470R" (at 80.01 143.51 90)
@@ -6615,7 +6616,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R3") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -6624,7 +6625,7 @@
   (symbol (lib_id "StockLib:R_1k") (at 220.98 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f4d2d149-6ddb-44c1-8d7d-c2e5fafbca8f)
-    (property "Reference" "R6" (at 220.98 48.26 90)
+    (property "Reference" "R12" (at 220.98 48.26 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1k" (at 220.98 50.8 90)
@@ -6641,7 +6642,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R6") (unit 1)
+          (reference "R12") (unit 1)
         )
       )
     )
@@ -6702,7 +6703,7 @@
   (symbol (lib_id "Amplifier_Operational:MCP6022") (at 347.98 190.5 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fa4c1344-c690-49a1-9caa-0f139dfe6f80)
-    (property "Reference" "U4" (at 347.98 180.34 0)
+    (property "Reference" "U5" (at 347.98 180.34 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "MCP6022" (at 347.98 182.88 0)
@@ -6725,7 +6726,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "U4") (unit 2)
+          (reference "U5") (unit 2)
         )
       )
     )
@@ -6734,7 +6735,7 @@
   (symbol (lib_id "StockLib:R_10k") (at 365.76 142.24 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fce1c347-0063-4630-8849-fbdea6149654)
-    (property "Reference" "R20" (at 365.76 135.89 90)
+    (property "Reference" "R24" (at 365.76 135.89 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10k" (at 365.76 138.43 90)
@@ -6751,7 +6752,7 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "R20") (unit 1)
+          (reference "R24") (unit 1)
         )
       )
     )
@@ -6760,7 +6761,7 @@
   (symbol (lib_id "StockLib:C_100nF") (at 248.92 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fcfd9262-3faf-4d37-867a-97a183906355)
-    (property "Reference" "C9" (at 252.73 92.71 0)
+    (property "Reference" "C14" (at 252.73 92.71 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 252.73 95.25 0)
@@ -6777,32 +6778,32 @@
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "C9") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "power:GND") (at 381 52.07 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 383.54 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ff8c76b6-c983-43aa-ad38-b3ee2e8b59ee)
-    (property "Reference" "#PWR044" (at 381 58.42 0)
+    (property "Reference" "#PWR047" (at 383.54 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 381 57.15 0)
+    (property "Value" "GND" (at 383.54 57.15 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 381 52.07 0)
+    (property "Footprint" "" (at 383.54 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 381 52.07 0)
+    (property "Datasheet" "" (at 383.54 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e7aa5838-113e-4b0c-afd4-61f55fb19585))
     (instances
       (project "rtty-transmitter"
         (path "/4ea8d87c-4bb0-4c80-84f6-8dbfd2cdcfd6"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
