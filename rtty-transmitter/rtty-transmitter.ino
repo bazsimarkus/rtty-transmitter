@@ -34,7 +34,9 @@
  */
 
 #include <avr/pgmspace.h>
-#include <SPI.h> // Required for MCP4901
+#include <SPI.h>
+#include <avr/interrupt.h>
+#include <avr/io.h>
 
 // --- DDS / MCP4901 CONFIGURATION START ---
 // These variables manage the high-speed sine wave generation
@@ -212,6 +214,63 @@ struct SetParams {
     float baud;
 } setParams = {2125, 2295, 45.45};  // Initialize with default values
 
+// --- EEPROM bit-bang definitions on PORTC (A0..A5) ---
+// A0 PC0 -> EE /CS
+// A3 PC3 -> EE SI (MOSI) (we will drive this for future writes)
+// A4 PC4 -> EE SCK
+// A5 PC5 -> EE SO (MISO)
+#define EE_CS_LOW()  PORTC &= ~_BV(PC0)
+#define EE_CS_HIGH() PORTC |=  _BV(PC0)
+#define EE_SCK_LOW() PORTC &= ~_BV(PC4)
+#define EE_SCK_HIGH() PORTC |=  _BV(PC4)
+#define EE_SI_HIGH() PORTC |=  _BV(PC3)
+#define EE_SI_LOW()  PORTC &= ~_BV(PC3)
+#define EE_SO_READ() ((PINC & _BV(PC5))?1:0)
+
+// EEPROM playback globals
+volatile uint32_t ee_sample_len = 0;
+volatile uint32_t ee_sample_count = 0;
+volatile uint8_t ee_sample = 0;
+volatile bool playback_active = false;
+volatile uint8_t saved_TIMSK1 = 0;
+
+// Counter for end-of-audio detection
+volatile int consecutive_ff_count = 0;
+// Threshold: 250 samples @ 8kHz is approx 31ms. 
+// It is extremely unlikely real audio stays at 255 for 31ms.
+#define FF_THRESHOLD 250 
+
+// send 32-bit command+addr (MSB first) via bit-bang
+void ee_set_addr(uint32_t cmd_addr) {
+  EE_CS_LOW();
+  // send 32 bits MSB first
+  for (uint8_t i = 0; i < 32; i++) {
+    if (cmd_addr & 0x80000000UL) EE_SI_HIGH(); else EE_SI_LOW();
+    EE_SCK_HIGH();
+    EE_SCK_LOW();
+    cmd_addr <<= 1;
+  }
+}
+
+// read next byte (MSB first) via bit-bang
+uint8_t ee_read_byte_bb() {
+  uint8_t d = 0;
+  for (uint8_t i = 0; i < 8; i++) {
+    d <<= 1;
+    EE_SCK_HIGH();
+    if (EE_SO_READ()) d |= 1;
+    EE_SCK_LOW();
+  }
+  return d;
+}
+
+// Prepare read from the absolute beginning
+void start_eeprom_stream() {
+  uint32_t cmd_addr = (0x03UL << 24) | 0x000000UL;
+  ee_set_addr(cmd_addr);
+  // CS stays LOW here, ready to clock out bytes in ISR
+}
+
 /**
  * @brief Executes a complete AT command.
  *
@@ -308,6 +367,32 @@ static void exec(char *cmdline)
             "AT+reset: Reset device to factory settings\r\n"
             "AT+help: Show this help"));
         Serial.println(F("OK"));
+    } else if (strcmp_P(command, PSTR("AT+play")) == 0) {
+        // 1. Initialize EEPROM read pointer to 0 immediately
+        start_eeprom_stream();
+        
+        // 2. Pre-load first byte
+        ee_sample = ee_read_byte_bb();
+        consecutive_ff_count = 0;
+
+        // 3. Save RTTY timer state and disable it
+        saved_TIMSK1 = TIMSK1;
+        TIMSK1 = 0;
+
+        // 4. Configure Timer2 for 8kHz Playback
+        cli();
+        TCCR2A = (1 << WGM21); // CTC
+        TCCR2B = (1 << CS21);  // prescaler 8
+        OCR2A = 249;           // (16MHz/8)/8000 - 1 = 249
+        TCNT2 = 0;
+        TIMSK2 |= (1 << OCIE2A); // enable Timer2 compare interrupt
+        sei();
+
+        // 5. Block until playback finishes (detected in ISR)
+        playback_active = true;
+        while(playback_active);
+        
+        Serial.println(F("OK"));
     } else if (strcmp_P(command, PSTR("AT")) == 0) {
         Serial.println(F("OK"));
     } else {
@@ -341,8 +426,17 @@ void setup()
     TCCR1B |= (1 << WGM12); // CTC mode
     TCCR1B |= (1 << CS10);  // No prescaling
     TIMSK1 |= (1 << OCIE1A); // Enable interrupt
-    sei(); 
+    sei();
     // --- END MCP4901 INIT ---
+    // --- PORTC setup for EEPROM bit-bang ---
+    // PC0 CS output, PC3 SI output, PC4 SCK output, PC5 SO input
+    DDRC |= _BV(PC0) | _BV(PC3) | _BV(PC4);
+    DDRC &= ~_BV(PC5);
+    // set idle states
+    PORTC |= _BV(PC0); // CS high
+    PORTC &= ~_BV(PC3); // SI low
+    PORTC &= ~_BV(PC4); // SCK low
+    // --- END PORTC setup for EEPROM bit-bang ---
 }
 
 /**
@@ -400,4 +494,41 @@ ISR(TIMER1_COMPA_vect) {
   while (!(SPSR & _BV(SPIF))); 
 
   PORTB |= _BV(2); // CS High
+}
+
+// --- Timer2 ISR for 8kHz playback (Audio) ---
+ISR(TIMER2_COMPA_vect) {
+  // 1. Output current sample to DAC
+  uint8_t high = CONFIG_HIGH | (ee_sample >> 4);
+  uint8_t low  = (ee_sample << 4);
+  PORTB &= ~_BV(2); // DAC CS low
+  SPDR = high; while(!(SPSR & _BV(SPIF)));
+  SPDR = low;  while(!(SPSR & _BV(SPIF)));
+  PORTB |= _BV(2); // DAC CS high
+
+  // 2. Read NEXT byte from EEPROM (Bit-Bang)
+  // We assume CS is held LOW by the setup function
+  uint8_t next = 0;
+  for (uint8_t i = 0; i < 8; i++) {
+    next <<= 1;
+    EE_SCK_HIGH();
+    if (EE_SO_READ()) next |= 1;
+    EE_SCK_LOW();
+  }
+  ee_sample = next;
+
+  // 3. Check for End of Audio (Consecutive 0xFF)
+  if (ee_sample == 0xFF) {
+      consecutive_ff_count++;
+  } else {
+      consecutive_ff_count = 0;
+  }
+
+  // 4. Stop if threshold reached
+  if (consecutive_ff_count >= FF_THRESHOLD) {
+    EE_CS_HIGH(); // Release EEPROM
+    TIMSK2 &= ~(1 << OCIE2A); // Stop Timer2
+    playback_active = false; // Signal loop to continue
+    TIMSK1 = saved_TIMSK1; // Restore RTTY Timer
+  }
 }
