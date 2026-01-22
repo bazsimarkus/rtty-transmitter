@@ -4689,7 +4689,7 @@
     (property "Value" "470R" (at 184.15 243.84 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "StockLib:R_10k_Axial_DIN0207" (at 183.388 242.57 90)
+    (property "Footprint" "StockLib:R_470_Axial_DIN0207" (at 183.388 242.57 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 181.61 242.57 0)
