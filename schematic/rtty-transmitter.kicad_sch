@@ -14151,7 +14151,7 @@
 				)
 			)
 		)
-		(property "Value" "470R"
+		(property "Value" "1k"
 			(at 171.45 146.05 90)
 			(effects
 				(font
@@ -14159,7 +14159,7 @@
 				)
 			)
 		)
-		(property "Footprint" "StockLib:R_470_Axial_DIN0207"
+		(property "Footprint" "StockLib:R_1k_Axial_DIN0207"
 			(at 171.45 151.638 90)
 			(effects
 				(font
