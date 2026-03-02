@@ -176,7 +176,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -188,7 +188,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -200,7 +200,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3cfa7de2-4c0a-407f-8a57-a4ed1f6220ce")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -435,7 +437,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -447,7 +449,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -459,7 +461,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/23d33ef9-fe1d-4a06-b670-8bdb77b1ff38")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -596,7 +600,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -608,7 +612,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -620,7 +624,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/592eb26b-bfcc-4de0-a98e-bc7b5d2031f9")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -855,7 +861,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -867,7 +873,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -879,7 +885,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/87a4b0ef-bcf1-47f0-b1aa-ae2d88d7ce1d")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -996,7 +1004,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1008,7 +1016,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1020,7 +1028,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/d93fa636-4419-4546-8890-c8ecc4354746")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2339,7 +2349,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -2351,7 +2361,7 @@
 				)
 			)
 		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -2387,7 +2397,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/b3f1ebe7-c7da-4a54-9fc9-e6f3c3e987a5")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2620,7 +2632,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2632,7 +2644,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2644,7 +2656,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/5855ac56-74d6-439a-9d58-505502afd36a")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -2975,7 +2989,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2987,7 +3001,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2999,7 +3013,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/f0c291e3-231a-43d9-85b0-fe403d5bbea8")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -3234,7 +3250,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3246,7 +3262,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3258,7 +3274,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/e5f04e21-d0d8-4eb6-9fdd-3325067e3c3c")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4577,7 +4595,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4589,7 +4607,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4601,7 +4619,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/43ce6f39-bd19-4497-afe2-deb8b6e783c1")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -4796,7 +4816,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4808,7 +4828,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4820,7 +4840,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/e6489ec6-61ef-4e2e-bc5f-503fbb16f3a8")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5055,7 +5077,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5067,7 +5089,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5079,7 +5101,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/ebc383f2-fe1f-4c47-afa9-ece59afa542b")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5274,7 +5298,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" " ~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5286,7 +5310,7 @@
 				)
 			)
 		)
-		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5298,7 +5322,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
 		(path "/f56fb68f-8631-4606-a5f2-137747711487")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5474,7 +5500,7 @@
 			(net 2 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "c14df291-99df-4147-b6a7-3edd2c2d5dcc")
+			(uuid "90ffb271-3f06-417d-a2d1-c166646746f4")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 -2.54)
@@ -5485,7 +5511,7 @@
 			(net 2 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "c14df291-99df-4147-b6a7-3edd2c2d5dcc")
+			(uuid "0a7f596e-28c2-4f7a-88dc-0dbba43cf1a0")
 		)
 		(pad "2" thru_hole circle
 			(at 2.54 2.54)
@@ -5496,7 +5522,7 @@
 			(net 2 "GND")
 			(pinfunction "Ext")
 			(pintype "passive")
-			(uuid "c14df291-99df-4147-b6a7-3edd2c2d5dcc")
+			(uuid "87e288b9-6119-44a8-b0a6-e008ec4a5cd9")
 		)
 		(embedded_fonts no)
 		(model ":KICAD_USER_3DMODEL_DIR:SMA CONNECTOR--3DModel-STEP-1.STEP"
@@ -5539,7 +5565,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5551,7 +5577,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5563,7 +5589,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/7077cbd0-4fc3-4509-a10a-cf8249b4ccc4")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -5894,7 +5922,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5906,7 +5934,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5918,7 +5946,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/21e21fc5-d3df-43b8-abec-c35bc5f8795d")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6145,7 +6175,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6157,7 +6187,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6169,7 +6199,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/3d461554-361f-4b4c-93a3-235e76648887")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -6246,7 +6278,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6258,7 +6290,7 @@
 				)
 			)
 		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6270,7 +6302,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO?92*")
 		(path "/b4998a02-da74-4439-b25d-157713f0f1c0")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6462,7 +6496,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6474,7 +6508,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6486,7 +6520,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/83d309a3-4796-4e2c-a01b-b89db6824f87")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6780,6 +6816,7 @@
 			)
 		)
 		(path "/9651c1c2-acbf-4f3d-9726-37e84a6657a7")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7125,7 +7162,7 @@
 			(pinfunction "SHIELD")
 			(pintype "passive")
 			(solder_mask_margin 0.102)
-			(uuid "d3c0b8c6-9e78-4c1c-ae22-e1407bc09c5a")
+			(uuid "be5c77c7-c880-4539-9865-d620df54a14c")
 		)
 		(embedded_fonts no)
 		(model "${KICAD_USER_3DMODEL_DIR}/USB_B.STEP"
@@ -7168,7 +7205,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/22248a.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7180,7 +7217,7 @@
 				)
 			)
 		)
-		(property "Description" "8-Bit D/A Converters with SPI Interface"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7192,7 +7229,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "DIP*W7.62mm* MSOP*3x3mm*P0.65mm* SOIC*3.9x4.9mm*P1.27mm*")
 		(path "/c6476d08-fe7e-43c8-aa5e-5cea473fdb43")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7458,7 +7497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7470,7 +7509,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7482,7 +7521,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/fce1c347-0063-4630-8849-fbdea6149654")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7717,7 +7758,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7729,7 +7770,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7741,7 +7782,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/f4132d1f-14ee-4b60-9a19-d1231af937c1")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -7976,7 +8019,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7988,7 +8031,7 @@
 				)
 			)
 		)
-		(property "Description" "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8000,7 +8043,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO?92*")
 		(path "/d60916d7-e2fe-4af6-a9f7-94fb4388457c")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8192,7 +8237,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8204,7 +8249,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8216,7 +8261,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9464c70e-f5bb-429e-9f80-c46c3fc8356a")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8451,7 +8498,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8463,7 +8510,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8475,7 +8522,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/a944b967-bf00-4cb6-9cd2-db98ac3d6ed2")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -8778,6 +8827,7 @@
 			)
 		)
 		(path "/5f3663c9-3cae-443e-9a83-5cce30456e9f")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9113,7 +9163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -9125,7 +9175,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -9137,7 +9187,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/fcfd9262-3faf-4d37-867a-97a183906355")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9332,7 +9384,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9344,7 +9396,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9356,7 +9408,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/41f907a2-f349-4f3d-8001-b23341859d54")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -9591,7 +9645,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9603,7 +9657,7 @@
 				)
 			)
 		)
-		(property "Description" "20MHz, 32kB Flash, 2kB SRAM, 1kB EEPROM, DIP-28"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9615,7 +9669,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/f5cc07c7-305a-418b-8e5e-ddbff03a4296")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10101,7 +10157,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10113,7 +10169,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10125,7 +10181,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/9786b423-9fa6-493a-a248-9bed7a9478ff")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10320,7 +10378,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10332,7 +10390,7 @@
 				)
 			)
 		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10368,7 +10426,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "D*DO?35*")
 		(path "/6833f774-9c11-4c5a-a0ec-1a619733c42d")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10601,7 +10661,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -10613,7 +10673,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -10625,7 +10685,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/4f4127a6-3e10-4c72-ad06-e0a3f6d68203")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -10817,7 +10879,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10829,7 +10891,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10841,7 +10903,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/5e17a7fa-ea5c-4b07-8ae1-f4db2bed6265")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11076,7 +11140,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11088,7 +11152,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11100,7 +11164,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/058bd1f5-0f66-4ea2-95e0-2fefcb144088")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11447,6 +11513,7 @@
 			)
 		)
 		(path "/1e3f91d1-8112-4ff3-b15a-89b4ac6ba152")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11676,7 +11743,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11688,7 +11755,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -11700,7 +11767,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/46443d89-6324-4ca2-9397-41f354e8fbd7")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -11935,7 +12004,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11947,7 +12016,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor THT"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11959,7 +12028,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/8a0bc1cd-b2ac-4ed1-b064-e4dab5c7441e")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -12069,7 +12140,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12081,7 +12152,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12093,7 +12164,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2dd984e7-9e48-4c56-90aa-7848d87e7af1")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12328,7 +12401,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12340,7 +12413,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12352,7 +12425,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/d9d59003-b6fd-4d5a-b755-15923141a750")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12489,7 +12564,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12501,7 +12576,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12513,7 +12588,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/5f3401ea-79ab-49a0-9286-b7cba27d24ee")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -12748,7 +12825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12760,7 +12837,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12772,7 +12849,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3bac1cd9-9629-4877-883c-6d033f81071b")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13103,7 +13182,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13115,7 +13194,7 @@
 				)
 			)
 		)
-		(property "Description" "Inductor THT"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13127,7 +13206,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/ba30bd79-606e-4241-a1c2-702ab26dc155")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_circle
@@ -13237,7 +13318,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13249,7 +13330,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13261,7 +13342,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b1d58981-10ae-40ad-aa96-fe51244e1d6a")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13459,7 +13542,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13471,7 +13554,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13483,7 +13566,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/e556aab3-bef8-4074-9413-f904fccd09c1")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -13600,7 +13685,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13612,7 +13697,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13624,7 +13709,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/ebfc8edd-e2ba-46ab-8da9-cd4c86cea684")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -13701,7 +13788,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13713,7 +13800,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13725,7 +13812,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/4047601e-480b-4f45-88ed-be7ff616dcb9")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -13802,7 +13891,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/devicedoc/20001685e.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13814,7 +13903,7 @@
 				)
 			)
 		)
-		(property "Description" "Dual Operational Amplifiers, Rail-to-Rail Input/Output, DIP-8/SOIC-8/TSSOP-8"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13826,7 +13915,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*")
 		(path "/fa4c1344-c690-49a1-9caa-0f139dfe6f80")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -14090,7 +14181,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14102,7 +14193,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14114,7 +14205,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/9032044b-f8fe-4d79-b062-0efc670d79e4")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -14306,7 +14399,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14318,7 +14411,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14330,7 +14423,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2fc406ac-34c9-4a2f-85f0-ffddbeb45779")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -14565,7 +14660,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20005565B.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14577,7 +14672,7 @@
 				)
 			)
 		)
-		(property "Description" "USB to I2C/UART Protocol Converter with GPIO, DIP-14"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14589,7 +14684,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "DIP*W7.62mm*")
 		(path "/3501cc01-7173-46c5-bf1b-f46c9860fccc")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -14921,7 +15018,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14933,7 +15030,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14945,7 +15042,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/07a06c39-a372-41b8-98b6-523f7e4b6bf0")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -16264,7 +16363,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16276,7 +16375,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16288,7 +16387,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/644ae568-d50f-4a8b-9e43-d79b88453dbc")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -16405,7 +16506,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16417,7 +16518,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -16429,7 +16530,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/33c55064-8b63-4eed-9919-c9a365fa9d09")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -16654,6 +16757,7 @@
 			)
 		)
 		(path "/334915b6-0866-4cfb-ac0c-fe581ea5be65")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -16892,7 +16996,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16904,7 +17008,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16916,7 +17020,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/2c45914a-c687-4f87-87ad-68dcc91b21ef")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -18235,7 +18341,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18247,7 +18353,7 @@
 				)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18259,7 +18365,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/9161fefb-cc4e-4bdf-ba0f-bfd3f38d2590")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr exclude_from_pos_files)
 		(fp_circle
@@ -18336,7 +18444,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18348,7 +18456,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18360,7 +18468,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/a7d48bf7-874b-4b8e-9857-d2243b736716")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -18594,7 +18704,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18606,7 +18716,7 @@
 				)
 			)
 		)
-		(property "Description" "Two pin crystal"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18618,7 +18728,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Crystal*")
 		(path "/71e59899-2582-4463-b44c-11416be9652a")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -18821,7 +18933,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18833,7 +18945,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18845,7 +18957,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/18d0da2d-10b5-4e48-a1f5-161bdf562d65")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -19040,7 +19154,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19052,7 +19166,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19064,7 +19178,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/deac1e1a-2cea-4824-84b6-814c90c54893")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -19299,7 +19415,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19311,7 +19427,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19323,7 +19439,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/49f57358-9ae5-4bb0-986a-d146b348d59d")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -19558,7 +19676,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19570,7 +19688,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19582,7 +19700,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/512f68d8-0ee9-4bf0-901e-0f0ae59f0cb3")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -19774,7 +19894,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19786,7 +19906,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19798,7 +19918,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/2ae4aca9-9d2f-49cf-9114-887ef47e60cf")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -19993,7 +20115,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20005,7 +20127,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20017,7 +20139,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/70a553f0-9d4d-43c6-939e-d6e1182cc84e")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -20252,7 +20376,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20264,7 +20388,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20276,7 +20400,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "CP_*")
 		(path "/c7bf6e35-8cfa-4eb6-8e0d-7cc8b6c6d042")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -21691,7 +21817,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21703,7 +21829,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21715,7 +21841,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/e54e4fba-c2ee-4288-8aa5-ad4ff65ffa86")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -21950,7 +22078,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -21962,7 +22090,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" ""
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -21974,7 +22102,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/577b5111-4dca-4a3d-a4f7-1d023433aa61")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -22172,7 +22302,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22184,7 +22314,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22196,7 +22326,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/66a90284-cb5c-4ec8-aa2b-0f1ee01b3364")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -22313,7 +22445,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21832H.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22325,7 +22457,7 @@
 				)
 			)
 		)
-		(property "Description" "SPI Serial EEPROM, DIP-8/SOIC-8/TSSOP-8"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22337,7 +22469,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x4.9mm* TSSOP*4.4x3mm*P0.65mm*")
 		(path "/8dda1ee8-5e40-45c6-b13e-06898f18a9a6")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -22603,7 +22737,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22615,7 +22749,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22627,7 +22761,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/6ee597c7-6d99-45fc-b710-26a03665fe4a")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -22862,7 +22998,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22874,7 +23010,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22886,7 +23022,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/f4d2d149-6ddb-44c1-8d7d-c2e5fafbca8f")
+		(sheetname "/")
 		(sheetfile "rtty-transmitter.kicad_sch")
 		(attr through_hole)
 		(fp_line
