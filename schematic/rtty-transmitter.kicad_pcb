@@ -10633,14 +10633,14 @@
 			)
 		)
 	)
-	(footprint "StockLib:LED_D5.0mm_YELLOW"
+	(footprint "StockLib:LED_D5.0mm_WHITE"
 		(layer "F.Cu")
 		(uuid "798ae02a-0e4e-4737-b49b-5a194b220772")
 		(at 59.436 55.88 180)
 		(descr "LED, diameter 5.0mm, 2 pins, http://cdn-reichelt.de/documents/datenblatt/A500/LL-504BC2E-009.pdf")
 		(tags "LED diameter 5.0mm 2 pins")
 		(property "Reference" "D4"
-			(at 1.27 4.064 0)
+			(at 1.27 4.064 180)
 			(layer "F.SilkS")
 			(uuid "7a8976c3-6338-4c45-9a01-32843d9f4dbd")
 			(effects
@@ -10651,7 +10651,7 @@
 			)
 		)
 		(property "Value" "LED 5mm WHITE"
-			(at 1.27 3.96 0)
+			(at 1.27 3.96 180)
 			(layer "F.Fab")
 			(uuid "73ff80f6-43af-47a3-88b6-fbce47ae51d8")
 			(effects
@@ -10698,7 +10698,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d95f05c7-fe0c-451d-bdf8-3dfddc1eaa86")
+			(uuid "d540d73e-239d-46a5-8055-0c88bc7093d6")
 		)
 		(fp_arc
 			(start 4.26 -0.000462)
@@ -10709,7 +10709,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "294390e5-d489-4562-9967-3af3966d287e")
+			(uuid "1a931b2f-7583-49e5-b0bb-03e8531ea239")
 		)
 		(fp_arc
 			(start -1.29 -1.54483)
@@ -10720,7 +10720,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "c6d1b826-fba9-4337-bc9a-23929425f9b5")
+			(uuid "ca01a46d-c8f4-4a61-8ca8-ee92b49529bc")
 		)
 		(fp_circle
 			(center 1.27 0)
@@ -10731,7 +10731,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "8eb7523b-00b3-4f06-adc8-ff14136a1296")
+			(uuid "131d6de2-af1f-4e59-be31-6e1586f28766")
 		)
 		(fp_line
 			(start 4.5 3.25)
@@ -10741,7 +10741,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a8abac52-00f6-44c1-9988-64b2b31f1ea6")
+			(uuid "3a316391-792b-4cf5-9849-2d15c2aab5a3")
 		)
 		(fp_line
 			(start 4.5 -3.25)
@@ -10751,7 +10751,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "f79a5b0f-0dc0-47dc-a7a6-35d19a747132")
+			(uuid "6cd9bc0f-6447-496e-9b5a-9eb6895e5f9a")
 		)
 		(fp_line
 			(start -1.95 3.25)
@@ -10761,7 +10761,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "be7ac5ad-4eea-4d20-980b-64601c882f48")
+			(uuid "601b3143-4c3d-4afc-a145-4eafdfe00942")
 		)
 		(fp_line
 			(start -1.95 -3.25)
@@ -10771,7 +10771,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "253a68b5-e033-446d-ac6b-3f6687d8cbbc")
+			(uuid "74854231-f85a-4935-9fb9-24a3be72c74d")
 		)
 		(fp_line
 			(start -1.23 -1.469694)
@@ -10781,7 +10781,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e1460b92-ccc3-41a9-865c-46283c34ab84")
+			(uuid "5ee64008-7523-42e9-9b13-cd17cf82c612")
 		)
 		(fp_arc
 			(start -1.23 -1.469694)
@@ -10792,7 +10792,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "7d21e95b-2640-4da0-bec5-d0f608d71729")
+			(uuid "d92225ce-7dbe-435c-9e70-25817ba7d055")
 		)
 		(fp_circle
 			(center 1.27 0)
@@ -10803,10 +10803,10 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "6a0ec2cb-fe5f-47fb-87c5-fa4a2c69062b")
+			(uuid "32b04d77-8bbc-4eda-96c9-bac4131f582e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.25 0 0)
+			(at 1.25 0 180)
 			(layer "F.Fab")
 			(uuid "e4bc01db-dfb5-439c-beb0-c997aa8f3b22")
 			(effects
@@ -10839,7 +10839,7 @@
 			(uuid "5a812067-578b-44ff-a8d3-f3799ccefcc9")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_USER_3DMODEL_DIR}/LEDs/LED D5 - Yellow-Clear_cutted.step"
+		(model "${KICAD_USER_3DMODEL_DIR}/LEDs/LED D5 - White-Clear_cutted.step"
 			(offset
 				(xyz 1.25 0 0)
 			)
@@ -14153,7 +14153,7 @@
 			)
 		)
 	)
-	(footprint "StockLib:LED_D5.0mm_YELLOW"
+	(footprint "StockLib:LED_D5.0mm_GREEN"
 		(layer "F.Cu")
 		(uuid "bb17c08c-1a86-4b05-8c4b-5de06130f9f0")
 		(at 20.454 55.88)
@@ -14218,7 +14218,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "6b49865b-3580-4021-bf68-42e4a08e47b6")
+			(uuid "c71ee819-1a83-4868-bbb2-12edb2d52119")
 		)
 		(fp_arc
 			(start -1.29 -1.54483)
@@ -14229,7 +14229,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "78a8c1b6-bd9e-4dcf-a537-a6bbf206885d")
+			(uuid "0fa1188a-0bb2-42d5-8ea8-6596941b7afe")
 		)
 		(fp_arc
 			(start 4.26 -0.000462)
@@ -14240,7 +14240,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "18c7af7e-4c2d-46d0-b5be-e0c2a1ee0a48")
+			(uuid "da6bb061-14de-4ee4-a9f8-f3b049ef9189")
 		)
 		(fp_circle
 			(center 1.27 0)
@@ -14251,7 +14251,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "2e00a417-9cbe-471b-9be1-c3044d7b94f0")
+			(uuid "cbcc06bb-4801-4874-bf83-883f53ecee95")
 		)
 		(fp_line
 			(start -1.95 -3.25)
@@ -14261,7 +14261,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "73cbc065-ef93-44f4-be4b-bca200558007")
+			(uuid "75d3ce6e-2879-49b8-88f8-e028197e75e9")
 		)
 		(fp_line
 			(start -1.95 3.25)
@@ -14271,7 +14271,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "dac87351-c924-4933-b5eb-896c07751d30")
+			(uuid "15c2e271-1361-49a7-ada9-49ec8a5c4e30")
 		)
 		(fp_line
 			(start 4.5 -3.25)
@@ -14281,7 +14281,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "bc951ea6-ea4e-447e-9e91-a7f24956af38")
+			(uuid "acd326b6-b68c-415a-a445-0308130b33f7")
 		)
 		(fp_line
 			(start 4.5 3.25)
@@ -14291,7 +14291,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "62dc2797-236a-4d5b-b9b5-fe2780c44e69")
+			(uuid "1c1e4620-e23c-4c71-b259-02d702b8ee97")
 		)
 		(fp_line
 			(start -1.23 -1.469694)
@@ -14301,7 +14301,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "8dd33dfc-4309-4385-b8f2-17e6e5d5dcd6")
+			(uuid "c093bac0-f4c6-426d-af96-7663c3b9a263")
 		)
 		(fp_arc
 			(start -1.23 -1.469694)
@@ -14312,7 +14312,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "f605552e-a510-433d-a9d8-46a476e2418e")
+			(uuid "07aade97-3ee9-4a87-873d-7efe12534eaf")
 		)
 		(fp_circle
 			(center 1.27 0)
@@ -14323,7 +14323,7 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "4d4b678d-eea4-4a8b-9d67-c2d1479c3e08")
+			(uuid "84683371-6330-4ee8-b945-9b0aec88e3dd")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 1.25 0 0)
@@ -14359,7 +14359,7 @@
 			(uuid "c16ca2af-a4b6-4327-a4ba-bfe5e1376a18")
 		)
 		(embedded_fonts no)
-		(model "${KICAD_USER_3DMODEL_DIR}/LEDs/LED D5 - Yellow-Clear_cutted.step"
+		(model "${KICAD_USER_3DMODEL_DIR}/LEDs/LED D5 - Green-Clear_cutted.step"
 			(offset
 				(xyz 1.25 0 0)
 			)

@@ -12377,7 +12377,7 @@
 				)
 			)
 		)
-		(property "Footprint" "StockLib:LED_D5.0mm_YELLOW"
+		(property "Footprint" "StockLib:LED_D5.0mm_WHITE"
 			(at 185.42 149.86 0)
 			(effects
 				(font
@@ -14773,7 +14773,7 @@
 				)
 			)
 		)
-		(property "Footprint" "StockLib:LED_D5.0mm_YELLOW"
+		(property "Footprint" "StockLib:LED_D5.0mm_GREEN"
 			(at 66.04 139.7 0)
 			(effects
 				(font
