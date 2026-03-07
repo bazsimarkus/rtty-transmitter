@@ -1,6 +1,6 @@
 /**
  * @file        main.c
- * @brief       RTTY/AM Radio Transmitter Firmware
+ * @brief       RTTY/AM Transmitter Card Firmware
  * @version     v1.0.0
  * @author      Balazs Markus
  *
@@ -12,13 +12,13 @@
  * card. The board generates FSK (Frequency-Shift Keying) audio tones via a
  * Direct Digital Synthesis (DDS) engine, feeding an MCP4901 8-bit SPI DAC,
  * whose output is amplified by a two-stage BJT amplifier (Q1/Q2) and fed into
- * a tank circuit / RF output stage (L1/L2, Q3). A 25LC640A SPI EEPROM (U4)
+ * a tank circuit / RF output stage (L1/L2, C10). A 25LC1024 SPI EEPROM (U4)
  * is used to store an 8-bit PCM audio sample for AM-mode audio playback. The
- * board communicates with a host over a CH340C USB-UART bridge (U1) at 9600
+ * board communicates with a host over a MCP2221A USB-UART bridge (U1) at 9600
  * baud and is controlled entirely through an AT command interface.
  *
  * =============================================================================
- * HARDWARE SUMMARY (derived from KiCad netlist rtty-transmitter.net)
+ * HARDWARE SUMMARY
  * =============================================================================
  *
  *  MCU         : ATmega328P (U2), 16 MHz crystal (Y1)
@@ -42,7 +42,7 @@
  *      --> tank circuit (L1, C10) --> RF output (J7)
  *
  *  Audio playback (Timer2 ISR, 8 kHz):
- *      25LC640A EEPROM --> bit-bang read --> MCP4901 DAC
+ *      25LC1024 EEPROM --> bit-bang read --> MCP4901 DAC
  *
  * =============================================================================
  * AT COMMAND INTERFACE (9600 8N1)
@@ -57,7 +57,6 @@
  *  AT+write=<pin>,<value>    - Drive a GPIO pin (pin 0-5 -> PD2-PD7, val 0/1)
  *  AT+play                   - Play 8-bit PCM audio stored in EEPROM
  *  AT+upload                 - Write raw hex bytes to EEPROM from UART stream
- *                              (stream ends on ~1 s idle timeout or EEPROM full)
  *  AT+reset                  - Restore factory defaults (high/low/baud)
  *  AT+help                   - Print command reference
  *
@@ -66,7 +65,7 @@
  * =============================================================================
  *
  *  Timer1 (16-bit, CTC, OCR1A=199, no prescaler) -> 80 kHz DDS ISR
- *      Drives the MCP4901 with a sine-table sample every 12.5 µs.
+ *      Drives the MCP4901 with a sine-table sample every 12.5 us.
  *      phaseIncrement == 0 means carrier is muted (between transmissions).
  *
  *  Timer2 (8-bit, CTC, OCR2A=249, prescaler /8)  -> 8 kHz audio playback ISR
@@ -115,7 +114,6 @@
  * FIRMWARE METADATA
  * ============================================================================ */
 #define FW_VERSION   "v1.0.0"         /**< Firmware version string             */
-#define DEVICE_NAME  "RTTY-TX"        /**< Device name shown in the banner      */
 
 
 /* ============================================================================
@@ -140,7 +138,7 @@
  * corresponding ISR(USART_RX_vect) handler causes the AVR to jump to the
  * default (reset) vector on every received byte, making RX completely silent.
  *
- * With U2X0=1 and UBRR=207:  actual baud = 16 MHz / (8 × 208) = 9615 Bd (0.16%)
+ * With U2X0=1 and UBRR=207:  actual baud = 16 MHz / (8 x 208) = 9615 Bd (0.16%)
  * ============================================================================ */
 
 /**
@@ -228,7 +226,7 @@ static inline bool uart_try_getc(uint8_t *out)
  * @brief Format and print a signed 16-bit integer over UART.
  *
  * Implemented without snprintf / printf to avoid pulling in the heavyweight
- * avr-libc formatted I/O library (~1?2 kB extra Flash).
+ * avr-libc formatted I/O library (~1-2 kB extra Flash).
  *
  * @param v  The value to print.
  */
@@ -301,9 +299,9 @@ volatile uint16_t rtty_bit_ticks   = 0;  /**< Countdown timer for RTTY bit perio
  *
  * Generated as: round(127.5 * (1 + sin(2*pi*i/256))) for i in 0..255.
  * Values range 0..255 with midpoint at 128.
+ * Stored in SRAM (no PROGMEM) so the Timer1 ISR can access it with a plain
+ * array index.
  */
-/* Stored in SRAM (no PROGMEM) so the Timer1 ISR can access it with a plain
- * array index - identical to the Arduino sketch.  Uses 256 bytes of SRAM.   */
 static const uint8_t sineTable[256] = {
     128, 131, 134, 137, 140, 143, 146, 149, 152, 155, 158, 162, 165, 167, 170, 173,
     176, 179, 182, 185, 188, 190, 193, 196, 198, 201, 203, 206, 208, 211, 213, 215,
@@ -443,8 +441,7 @@ static void rtty_send_bit(char bit,
  *   2. Sends the appropriate shift character (LTRS or FIGS).
  *   3. Iterates through each character, inserting shift changes as needed.
  *   4. Wraps each 5-bit code in a start bit (0) and two stop bits (11).
- *   5. Uses delay_us() for bit timing, matching the original Arduino sketch's
- *      delay(1000 / baud) call but at microsecond resolution.
+ *   5. Uses delay_us() for bit timing at microsecond resolution.
  *
  * The string MUST already be upper-cased before calling this function.
  *
@@ -456,7 +453,7 @@ static void rtty_send_bit(char bit,
 static void rtty_transmit(const char *text, int high, int low, float baud)
 {
     /* Pre-compute DDS phase increments for both tones.
-     * Formula: increment = frequency × 2^32 / sample_rate                    */
+     * Formula: increment = frequency x 2^32 / sample_rate                    */
     uint32_t inc_high = (uint32_t)((high * 4294967296.0) / SAMPLE_RATE);
     uint32_t inc_low  = (uint32_t)((low  * 4294967296.0) / SAMPLE_RATE);
 
@@ -506,7 +503,7 @@ static void rtty_transmit(const char *text, int high, int low, float baud)
 
 
 /* ============================================================================
- * BIT-BANG SPI FOR 25LC640A EEPROM  (PORTC)
+ * BIT-BANG SPI FOR 25LC1024 EEPROM  (PORTC)
  * ============================================================================
  *
  *  PC0 = /CS   (output) - active low chip select
@@ -514,7 +511,7 @@ static void rtty_transmit(const char *text, int high, int low, float baud)
  *  PC4 = SCK   (output) - clock (CPOL=0, CPHA=0)
  *  PC5 = MISO  (input)  - serial data out from EEPROM
  *
- * 25LC640A SPI commands used here:
+ * 25LC1024 SPI commands used here:
  *   READ  = 0x03  - sequential read from given 16-bit address
  *   WRITE = 0x02  - byte-write (must be preceded by WREN within same CS cycle)
  *   WREN  = 0x06  - write-enable latch
@@ -537,7 +534,7 @@ static void rtty_transmit(const char *text, int high, int low, float baud)
  *
  * The 25LC1024 uses a 24-bit address field: the READ and WRITE opcodes are
  * followed by three address bytes (MSB first), where only the lower 17 bits
- * are significant (addresses 0x000000 ? 0x01FFFF).
+ * are significant (addresses 0x000000 - 0x01FFFF).
  */
 #define EE_CMD_READ  0x03U   /**< Read data from memory array                  */
 #define EE_CMD_WRITE 0x02U   /**< Write data to memory array                   */
@@ -593,7 +590,7 @@ static void ee_wait_ready(void)
  * The 25LC1024 requires three address bytes (24 bits, only lower 17 are used).
  * /CS is held LOW after this call; call EE_CS_HIGH() to end the transaction.
  *
- * @param addr  Starting read address (0x000000 ? 0x01FFFF).
+ * @param addr  Starting read address (0x000000 - 0x01FFFF).
  */
 static void ee_start_read(uint32_t addr)
 {
@@ -632,7 +629,7 @@ static inline uint8_t ee_read_next(void)
  * The 25LC1024 write cycle takes up to 5 ms; ee_wait_ready() must be called
  * (and is called here) before the next operation.
  *
- * @param addr   Target address (0x000000 ? 0x01FFFF).
+ * @param addr   Target address (0x000000 - 0x01FFFF).
  * @param data   Byte value to store.
  */
 static void ee_write_byte(uint32_t addr, uint8_t data)
@@ -655,6 +652,36 @@ static void ee_write_byte(uint32_t addr, uint8_t data)
     ee_wait_ready();
 }
 
+/**
+ * @brief Write a block of data to EEPROM (Page Write).
+ * 
+ * IMPORTANT: The length must not cause the address to cross a 256-byte 
+ * page boundary, otherwise data wraps to the start of the page.
+ * We will use 32-byte chunks, which divide 256 evenly, so this is safe.
+ */
+static void ee_write_page(uint32_t addr, const uint8_t *data, uint8_t len)
+{
+    /* Step 1: WREN */
+    EE_CS_LOW();
+    ee_spi_byte(EE_CMD_WREN);
+    EE_CS_HIGH();
+
+    /* Step 2: WRITE command + Address */
+    EE_CS_LOW();
+    ee_spi_byte(EE_CMD_WRITE);
+    ee_spi_byte((uint8_t)(addr >> 16));
+    ee_spi_byte((uint8_t)(addr >>  8));
+    ee_spi_byte((uint8_t)(addr));
+
+    /* Step 3: Stream Data Bytes */
+    for (uint8_t i = 0; i < len; i++) {
+        ee_spi_byte(data[i]);
+    }
+    EE_CS_HIGH();
+
+    /* Step 4: Wait for write cycle to complete (approx 5ms) */
+    ee_wait_ready();
+}
 
 /* ============================================================================
  * EEPROM AUDIO PLAYBACK GLOBALS
@@ -681,7 +708,7 @@ volatile uint16_t consecutive_ff_cnt = 0;      /**< Counter for end-of-audio det
 /**
  * @brief Timer1 Compare-A ISR - 80 kHz DDS / sine-wave generator.
  *
- * Fires every 12.5 µs (OCR1A=199, no prescaler, 16 MHz).
+ * Fires every 12.5 us (OCR1A=199, no prescaler, 16 MHz).
  * Advances the 32-bit phase accumulator by phaseIncrement, then uses the
  * top 8 bits as an index into the sine table stored in Flash.
  * If phaseIncrement == 0 the DAC output is held at mid-scale (0x80) to
@@ -692,12 +719,11 @@ ISR(TIMER1_COMPA_vect)
     /* Decrement RTTY bit-period counter (used by rtty_send_bit). */
     if (rtty_bit_ticks) rtty_bit_ticks--;
 
-    /* Advance DDS phase accumulator and look up sine sample from SRAM table -
-     * identical to the Arduino sketch (no PROGMEM, plain array index).        */
+    /* Advance DDS phase accumulator and look up sine sample from SRAM table */
     phaseAccumulator += phaseIncrement;
     uint8_t sineValue = sineTable[phaseAccumulator >> 24];
 
-    /* Write sample to MCP4901 DAC - same raw register sequence as Arduino.   */
+    /* Write sample to MCP4901 DAC */
     PORTB &= ~_BV(DAC_CS_PIN);
     SPDR = CONFIG_HIGH | (sineValue >> 4);
     while (!(SPSR & (1 << SPIF)));
@@ -709,7 +735,7 @@ ISR(TIMER1_COMPA_vect)
 /**
  * @brief Timer2 Compare-A ISR - 8 kHz audio playback from EEPROM.
  *
- * Fires every 125 µs (OCR2A=249, prescaler /8, 16 MHz).
+ * Fires every 125 us (OCR2A=249, prescaler /8, 16 MHz).
  * Outputs the pre-fetched sample to the DAC, then clocks the next byte from
  * the EEPROM over bit-bang SPI.  Playback stops when FF_THRESHOLD consecutive
  * 0xFF samples have been detected, or when EEPROM end is reached.
@@ -719,7 +745,7 @@ ISR(TIMER1_COMPA_vect)
  */
 ISR(TIMER2_COMPA_vect)
 {
-    /* Output current sample to DAC - identical inline sequence to Arduino.    */
+    /* Output current sample to DAC */
     uint8_t high = CONFIG_HIGH | (ee_sample >> 4);
     uint8_t low  = (ee_sample << 4);
     PORTB &= ~_BV(DAC_CS_PIN);
@@ -727,7 +753,7 @@ ISR(TIMER2_COMPA_vect)
     SPDR = low;  while (!(SPSR & (1 << SPIF)));
     PORTB |= _BV(DAC_CS_PIN);
 
-    /* Read next byte from EEPROM via inline bit-bang - identical to Arduino.  */
+    /* Read next byte from EEPROM via inline bit-bang */
     uint8_t next = 0;
     for (uint8_t i = 0; i < 8; i++) {
         next <<= 1;
@@ -737,7 +763,7 @@ ISR(TIMER2_COMPA_vect)
     }
     ee_sample = next;
 
-    /* End-of-audio detection - identical to Arduino.                          */
+    /* End-of-audio detection */
     if (ee_sample == 0xFF) consecutive_ff_cnt++;
     else                   consecutive_ff_cnt = 0;
 
@@ -794,8 +820,7 @@ static void cmd_upload(void);
  *
  * The function receives a mutable NUL-terminated string containing the full
  * command as typed by the user (without the terminating CR).  It uses
- * strtok_r / manual pointer arithmetic to split command verb from arguments -
- * avoiding the Arduino String class entirely in favour of standard C strings.
+ * strtok_r / manual pointer arithmetic to split command verb from arguments.
  *
  * Recognised commands
  * -------------------
@@ -1022,116 +1047,159 @@ static void exec(char *cmdline)
 
 /**
  * @brief Receive a hex-encoded PCM byte stream over UART and write it to the
- *        25LC640A EEPROM starting at address 0x0000.
+ *        25LC1024 EEPROM starting at address 0x0000.
  *
  * Protocol
  * --------
  * The host sends pairs of ASCII hexadecimal digits ('0'-'9', 'A'-'F', 'a'-'f').
- * Whitespace characters (space, tab, CR, LF) between pairs are silently ignored,
- * making it easy to upload data with a simple hex-dump tool or a Python script.
+ * Whitespace characters (space, tab, CR, LF) between pairs are silently ignored.
+ * Non-hex, non-whitespace characters are also silently discarded.
+ *
+ * The firmware uses a chunked ACK handshake to pace the transfer and prevent
+ * UART buffer overrun. Every time a full 32-byte chunk (64 hex characters) is
+ * written to EEPROM, a single '>' character is sent back to the host as an ACK.
+ * The host must wait for each '>' before sending the next chunk.
  *
  * Session termination
  * -------------------
- * The upload session ends when either:
- *   (a) No new character arrives within UPLOAD_IDLE_MS milliseconds, or
+ * The upload session ends when any of the following occur:
+ *   (a) No new character arrives within ~1.5 seconds (30000 * 50 us idle ticks).
  *   (b) The EEPROM is full (131072 bytes written).
+ *   (c) An ESC character (0x1B) is received from the host.
  *
- * A simple software millisecond counter is used for the timeout - each loop
- * iteration idles for 1 ms via _delay_ms(1) when no byte is available.
+ * The DDS Timer1 ISR is suspended for the duration of the upload to prevent
+ * its ~80 kHz firing rate from stretching the 50 us idle tick and inflating
+ * the timeout beyond its intended 1.5 s window.
  *
  * End-of-data marker
  * ------------------
- * To allow the EEPROM to contain valid audio with a defined end, the firmware
- * pads any remaining unwritten EEPROM bytes with 0xFF after the upload completes.
- * This is the same sentinel value used by the AT+play command to detect silence.
+ * After the upload completes, the firmware writes 512 bytes (16 x 32-byte pages)
+ * of 0xFF padding immediately after the last written byte. This is sufficient to
+ * trigger the playback stop condition (FF_THRESHOLD = 250 consecutive 0xFF bytes)
+ * without filling the entire remaining EEPROM, which would take ~20 seconds.
  *
  * Example usage (Python host-side)
  * ---------------------------------
- *   import serial, binascii, time
+ *   import serial, time
  *   with serial.Serial('/dev/ttyUSB0', 9600) as s:
  *       s.write(b'AT+upload\r')
- *       time.sleep(0.1)
+ *       time.sleep(0.1)  # Wait for READY
  *       data = open('sample.raw', 'rb').read()  # 8-bit unsigned PCM, 8 kHz
- *       s.write(binascii.hexlify(data) + b'\r\n')
+ *       hex_data = data.hex().upper().encode()
+ *       chunk_size = 64  # 64 hex chars = 32 bytes binary
+ *       for i in range(0, len(hex_data), chunk_size):
+ *           s.write(hex_data[i:i+chunk_size])
+ *           s.read(1)  # Wait for '>' ACK before sending next chunk
+ *       # Session closes automatically after 1.5 s idle timeout
  */
+#define CHUNK_SIZE  32   /* 32 bytes binary = 64 Hex chars */
+
 static void cmd_upload(void)
 {
-    uart_puts_P(PSTR(
-        "Ready. Send hex data (e.g. A3 4F 00 ...). "
-        "Upload ends after " ));
-    uart_print_int((int16_t)UPLOAD_IDLE_MS);
-    uart_puts_P(PSTR(" ms idle.\r\n"));
+    uart_puts_P(PSTR("READY\r\n")); /* Signal Python to start */
+    LED_ON();
 
-    LED_ON();                                    /* Indicate recording/write mode */
+    /* Suspend the 80 kHz DDS Timer1 ISR for the duration of the upload.
+     * Without this, Timer1 fires ~4 times per _delay_us(50) iteration and
+     * stretches each tick well beyond 50 us, making the 1.5 s idle timeout
+     * grow to >10 s and causing the host-side final-OK wait to time out. */
+    uint8_t saved_timsk1_upload = TIMSK1;
+    TIMSK1 = 0;
+    phaseIncrement = 0; /* Ensure DAC outputs silence if Timer1 fires spuriously */
 
-    uint32_t addr          = 0;                 /* Current write address (17-bit) */
-    bool     session_done  = false;             /* Set when upload ends           */
-    uint8_t  nibble_buf    = 0;                 /* High nibble pending             */
-    bool     have_nibble   = false;             /* True when high nibble stored    */
-
-    /* Timeout state: each iteration of the outer loop represents roughly 1 ms.
-     * We use _delay_ms(1) + uart_try_getc() as a simple polling tick.           */
-    uint16_t idle_ms = 0;                       /* Milliseconds since last char   */
+    uint32_t addr = 0;
+    uint8_t  page_buf[CHUNK_SIZE];
+    uint8_t  buf_idx = 0;
+    
+    uint8_t  nibble_buf = 0;
+    bool     have_nibble = false;
+    bool     session_done = false;
+    
+    /* Timeout counter: 30000 ticks * 50us = 1.5 seconds */
+    uint16_t idle_ticks = 0; 
 
     while (!session_done && addr < EEPROM_SIZE)
     {
         uint8_t rx;
+        // Non-blocking read
         if (uart_try_getc(&rx)) {
-            idle_ms = 0;                         /* Reset timeout on each byte  */
+            idle_ticks = 0; /* Reset timeout on valid char */
 
-            /* Skip whitespace separators between hex pairs. */
-            if (rx == ' ' || rx == '\t' || rx == '\r' || rx == '\n') continue;
+            /* End command if user sends ESC (0x1B) */
+            if (rx == 0x1B) { session_done = true; break; }
+            
+            /* Skip whitespace */
+            if (isspace(rx)) continue;
 
-            /* Validate: only hex digits are accepted. */
-            if (!isxdigit((unsigned char)rx)) {
-                uart_puts_P(PSTR("\r\nError: Non-hex character received.\r\n"));
-                LED_OFF();
-                return;
-            }
+            /* Validate Hex */
+            if (!isxdigit(rx)) continue;
 
-            /* Convert ASCII hex digit to 4-bit value. */
-            uint8_t nibble;
-            if      (rx >= '0' && rx <= '9') nibble = (uint8_t)(rx - '0');
-            else if (rx >= 'a' && rx <= 'f') nibble = (uint8_t)(rx - 'a' + 10);
-            else                             nibble = (uint8_t)(rx - 'A' + 10);
+            /* Decode Hex */
+            uint8_t val = 0;
+            if (rx >= '0' && rx <= '9') val = rx - '0';
+            else if (rx >= 'A' && rx <= 'F') val = rx - 'A' + 10;
+            else if (rx >= 'a' && rx <= 'f') val = rx - 'a' + 10;
 
             if (!have_nibble) {
-                nibble_buf  = (uint8_t)(nibble << 4); /* Store high nibble     */
+                nibble_buf = (val << 4);
                 have_nibble = true;
             } else {
-                uint8_t data = nibble_buf | nibble;   /* Combine into full byte */
-                have_nibble  = false;
-                ee_write_byte(addr, data);             /* Write to EEPROM       */
-                addr++;
+                /* We have a full byte */
+                page_buf[buf_idx++] = (nibble_buf | val);
+                have_nibble = false;
 
-                /* Progress indicator: print '.' every 256 bytes. */
-                if ((addr & 0xFFU) == 0) uart_putc('.');
+                /* If Buffer Full, Write Page */
+                if (buf_idx >= CHUNK_SIZE) {
+                    /* Write 32 bytes to EEPROM (takes ~5ms) */
+                    ee_write_page(addr, page_buf, CHUNK_SIZE);
+                    addr += CHUNK_SIZE;
+                    buf_idx = 0;
+
+                    /* Send ACK to Python so it sends next chunk */
+                    uart_putc('>');
+                }
             }
         } else {
-            /* No character available - advance idle counter. */
-            _delay_ms(1);
-            idle_ms++;
-            if (idle_ms >= UPLOAD_IDLE_MS) session_done = true;
+            /* Wait 50us instead of 1ms to prevent UART buffer overrun */
+            _delay_us(50);
+            idle_ticks++;
+            /* 30000 * 50us = 1.5 seconds */
+            if (idle_ticks >= 30000) session_done = true;
         }
     }
 
-    /* If we have an orphaned high nibble, report it. */
-    if (have_nibble) {
-        uart_puts_P(PSTR("\r\nWarning: Odd nibble at end of stream (ignored).\r\n"));
+    /* Write remaining bytes if any (incomplete chunk) */
+    if (buf_idx > 0) {
+        /* Pad the rest of the buffer with 0xFF for safety */
+        for (uint8_t i = buf_idx; i < CHUNK_SIZE; i++) {
+            page_buf[i] = 0xFF;
+        }
+        ee_write_page(addr, page_buf, CHUNK_SIZE);
+        addr += CHUNK_SIZE;
+        uart_putc('>'); 
     }
 
-    /* Pad the rest of the EEPROM with 0xFF so AT+play detects end-of-audio. */
-    uart_puts_P(PSTR("\r\nFinalising..."));
-    while (addr < EEPROM_SIZE) {
-        ee_write_byte(addr, 0xFFU);
-        addr++;
-        if ((addr & 0xFFU) == 0) uart_putc('.');  /* Show progress              */
+    /* OPTIMIZATION: Smart Padding
+     * Instead of filling the entire remaining EEPROM (which takes ~20 seconds),
+     * we only write enough 0xFF bytes to trigger the playback stop condition.
+     * FF_THRESHOLD is 250, so we write 512 bytes (16 pages) to be safe. 
+     */
+    memset(page_buf, 0xFF, CHUNK_SIZE);
+    
+    /* Write 16 pages (512 bytes) of silence, or until end of memory */
+    for (uint8_t i = 0; i < 16; i++) {
+        if (addr >= EEPROM_SIZE) break;
+        ee_write_page(addr, page_buf, CHUNK_SIZE);
+        addr += CHUNK_SIZE;
     }
 
     LED_OFF();
-    uart_puts_P(PSTR("\r\nUpload complete.\r\nOK\r\n"));
+    /* Restore Timer1 DDS interrupt and clear any pending compare flag that
+     * accumulated while TIMSK1 was 0 (same pattern as AT+play). */
+    TIFR1  = (1 << OCF1A);
+    TIMSK1 = saved_timsk1_upload;
+    uart_puts_P(PSTR("OK\r\n"));
 }
-
 
 /* ============================================================================
  * STARTUP BANNER
@@ -1147,13 +1215,14 @@ static void cmd_upload(void)
 static void print_banner(void)
 {
     uart_puts_P(PSTR("\r\n"));
+    uart_puts_P(PSTR("\r\n"));
     uart_puts_P(PSTR("  +-------------------------------------------------+\r\n"));
-    uart_puts_P(PSTR("  |         " DEVICE_NAME " RTTY Transmitter  " FW_VERSION "          |\r\n"));
-    uart_puts_P(PSTR("  |         ATmega328P @ 16 MHz  --  9600 8N1       |\r\n"));
+    uart_puts_P(PSTR("  |         RTTY/AM transmitter card  " FW_VERSION "        |\r\n"));
+    uart_puts_P(PSTR("  |         ATmega328P @ 16 MHz  -  9600 8N1        |\r\n"));
     uart_puts_P(PSTR("  +-------------------------------------------------+\r\n"));
     uart_puts_P(PSTR("\r\n"));
     uart_puts_P(PSTR("  Commands:\r\n"));
-    uart_puts_P(PSTR("    AT+send=\"msg\"       Transmit RTTY message\r\n"));
+    uart_puts_P(PSTR("    AT+send=\"msg\"      Transmit RTTY message\r\n"));
     uart_puts_P(PSTR("    AT+set=<p>,<v>     Set parameter (high/low/baud)\r\n"));
     uart_puts_P(PSTR("    AT+get=<p>         Query parameter\r\n"));
     uart_puts_P(PSTR("    AT+write=<p>,<v>   Set GPIO pin (0-5 -> PD2-PD7)\r\n"));
@@ -1197,7 +1266,7 @@ static void hw_init(void)
     /* Enable SPI as Master, SPI mode 0, MSB first.
      * Clock rate: SPR1=0, SPR0=0, SPI2X=1 -> F_CPU/2 = 8 MHz.
      * Note: SPR0 must NOT be set here - SPR0=1 + SPI2X=1 gives F_CPU/8 = 2 MHz
-     * which would cause the 80 kHz Timer1 ISR to spend ~12 µs of every 12.5 µs
+     * which would cause the 80 kHz Timer1 ISR to spend ~12 us of every 12.5 us
      * in SPI transfers, starving the CPU and causing garbled UART output.     */
     SPCR = (1 << SPE) | (1 << MSTR);            /* Enable SPI master, F_CPU/4 base */
     SPSR = (1 << SPI2X);                        /* SPI2X=1: double to F_CPU/2 = 8 MHz */
