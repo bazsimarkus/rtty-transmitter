@@ -394,9 +394,9 @@ The control center window is divided into functional panels:
 
 The SMA connector (J7) accepts any standard SMA antenna. The board was tested with two antennas:
 
-A generic ISM-band whip antenna (left in the image above) primarily designed for 433/868/915 MHz use. While functional as a receive and general-purpose antenna, its electrical length is far shorter than the quarter-wave length at 802 kHz (approximately 93 meters), so it is not well matched to the transmit frequency and delivers limited range.
+A generic ISM-band whip antenna (in the image above the PCB) primarily designed for 433/868/915 MHz use. While functional as a receive and general-purpose antenna, its electrical length is far shorter than the quarter-wave length at 802 kHz (approximately 93 meters), so it is not well matched to the transmit frequency and delivers limited range.
 
-A telescopic SRH-789 multiband antenna (right in the image above), which can be extended to approximately 1 meter. This antenna performs noticeably better at 802 kHz, and with it a range of a few meters was achieved in testing.
+A telescopic SRH-789 multiband antenna (in the image below the PCB), which can be extended to approximately 1 meter. This antenna performs noticeably better at 802 kHz, and with it a range of a few meters was achieved in testing.
 
 In both cases, a properly resonant loading coil or a ground-plane matched to the medium-wave band would significantly improve performance. With the default low-power output stage and a short antenna, the practical range of this board is limited to a few meters, which is entirely by design and appropriate for a bench demonstration or close-range testing setup.
 
