@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 320" width="820" height="320" font-family="'Helvetica Neue', Helvetica, sans-serif">
+
+  <!-- Background -->
+  <rect width="820" height="320" fill="#ffffff" rx="10"/>
+
+  <!-- Divider -->
+  <line x1="405" y1="20" x2="405" y2="300" stroke="#d0ccc0" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- ═══════════════════════════════════ -->
+  <!--         LEFT: AMPLITUDE MODULATION  -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Title -->
+  <text x="205" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e" letter-spacing="0.5">Amplitude Modulation</text>
+
+  <!-- Axes -->
+  <!-- X axis -->
+  <line x1="40" y1="220" x2="380" y2="220" stroke="#333" stroke-width="1.8"/>
+  <!-- Y axis -->
+  <line x1="55" y1="70" x2="55" y2="225" stroke="#333" stroke-width="1.8"/>
+  <!-- X axis arrow -->
+  <polygon points="380,216 380,224 390,220" fill="#333"/>
+  <!-- Y axis arrow -->
+  <polygon points="51,70 59,70 55,60" fill="#333"/>
+
+  <!-- Axis labels -->
+  <text x="388" y="224" font-size="12" fill="#444" font-style="italic">f</text>
+  <text x="320" y="238" font-size="11" fill="#555">Frequency →</text>
+  <text transform="translate(35, 180) rotate(-90)" font-size="11" fill="#555">Magnitude →</text>
+
+  <!-- Continuous Spectrum Curve (LSB, Carrier, and USB perfectly connected) -->
+  <path id="am-spectrum-path" d="M 70,219
+           C 77,219 86,215 94,205
+           C 102,193 109,175 116,162
+           C 123,153 129,148 135,148
+           C 141,148 147,153 154,162
+           C 161,175 168,193 176,205
+           C 184,215 190,219 195,219
+           C 200,219 205,170 210,120
+           C 212,100 214,85 215,85
+           C 216,85 218,100 220,120
+           C 225,170 230,219 235,219
+           C 240,219 246,215 254,205
+           C 262,193 269,175 276,162
+           C 283,153 289,148 295,148
+           C 301,148 307,153 314,162
+           C 321,175 328,193 336,205
+           C 344,215 353,219 360,219"
+        fill="#7ecec4" fill-opacity="0.5" stroke="#2a9d8f" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Hatch lines uniformly clipped to the exact spectrum shape -->
+  <clipPath id="am-clip">
+    <path d="M 70,219 C 77,219 86,215 94,205 C 102,193 109,175 116,162 C 123,153 129,148 135,148 C 141,148 147,153 154,162 C 161,175 168,193 176,205 C 184,215 190,219 195,219 C 200,219 205,170 210,120 C 212,100 214,85 215,85 C 216,85 218,100 220,120 C 225,170 230,219 235,219 C 240,219 246,215 254,205 C 262,193 269,175 276,162 C 283,153 289,148 295,148 C 301,148 307,153 314,162 C 321,175 328,193 336,205 C 344,215 353,219 360,219 Z"/>
+  </clipPath>
+  <g clip-path="url(#am-clip)">
+    <!-- Iterate hatch lines every 10px from 75 to 355 -->
+    <line x1="75" y1="80" x2="75" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="85" y1="80" x2="85" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="95" y1="80" x2="95" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="105" y1="80" x2="105" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="115" y1="80" x2="115" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="125" y1="80" x2="125" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="135" y1="80" x2="135" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="145" y1="80" x2="145" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="155" y1="80" x2="155" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="165" y1="80" x2="165" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="175" y1="80" x2="175" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="185" y1="80" x2="185" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="195" y1="80" x2="195" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="205" y1="80" x2="205" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="215" y1="80" x2="215" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="225" y1="80" x2="225" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="235" y1="80" x2="235" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="245" y1="80" x2="245" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="255" y1="80" x2="255" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="265" y1="80" x2="265" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="275" y1="80" x2="275" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="285" y1="80" x2="285" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="295" y1="80" x2="295" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="305" y1="80" x2="305" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="315" y1="80" x2="315" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="325" y1="80" x2="325" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="335" y1="80" x2="335" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="345" y1="80" x2="345" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="355" y1="80" x2="355" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- RF Carrier sharp center line / spike -->
+  <line x1="215" y1="220" x2="215" y2="80" stroke="#1a1a2e" stroke-width="2.5"/>
+  <polygon points="211,82 219,82 215,72" fill="#1a1a2e"/>
+  <!-- Carrier label -->
+  <text x="215" y="65" text-anchor="middle" font-size="11" fill="#1a1a2e">RF Carrier</text>
+
+  <!-- Labels: Lower sideband -->
+  <text x="135" y="130" text-anchor="middle" font-size="11.5" fill="#1a1a2e">Lower</text>
+  <text x="135" y="144" text-anchor="middle" font-size="11.5" fill="#1a1a2e">sideband</text>
+
+  <!-- Labels: Upper sideband -->
+  <text x="295" y="130" text-anchor="middle" font-size="11.5" fill="#1a1a2e">Upper</text>
+  <text x="295" y="144" text-anchor="middle" font-size="11.5" fill="#1a1a2e">sideband</text>
+
+
+  <!-- ═══════════════════════════════════ -->
+  <!--    RIGHT: SINGLE SIDEBAND          -->
+  <!-- ═══════════════════════════════════ -->
+
+  <!-- Title -->
+  <text x="615" y="38" text-anchor="middle" font-size="17" font-weight="bold" fill="#1a1a2e" letter-spacing="0.5">Single Sideband Modulation</text>
+
+  <!-- Axes -->
+  <line x1="430" y1="220" x2="780" y2="220" stroke="#333" stroke-width="1.8"/>
+  <line x1="445" y1="70" x2="445" y2="225" stroke="#333" stroke-width="1.8"/>
+  <polygon points="780,216 780,224 790,220" fill="#333"/>
+  <polygon points="441,70 449,70 445,60" fill="#333"/>
+
+  <!-- X/Y labels -->
+  <text x="788" y="224" font-size="12" fill="#444" font-style="italic">f</text>
+  <text x="710" y="238" font-size="11" fill="#555">Frequency →</text>
+  <text transform="translate(425, 180) rotate(-90)" font-size="11" fill="#555">Magnitude →</text>
+
+  <!-- Carrier tick mark only (no spike) - Spaced precisely to mirror the left diagram -->
+  <line x1="610" y1="215" x2="610" y2="225" stroke="#555" stroke-width="1.8"/>
+
+  <!-- "No carrier present!" label -->
+  <text x="510" y="155" font-size="12" font-weight="bold" fill="#c0392b" font-style="italic">No carrier present!</text>
+
+  <!-- Upper Sideband only (centered exactly symmetrical to the left USB) -->
+  <path d="M 630,219
+           C 635,219 641,215 649,205
+           C 657,193 664,175 671,162
+           C 678,153 684,148 690,148
+           C 696,148 702,153 709,162
+           C 716,175 723,193 731,205
+           C 739,215 748,219 755,219"
+        fill="#7ecec4" fill-opacity="0.5" stroke="#2a9d8f" stroke-width="1.8" stroke-linejoin="round"/>
+  
+  <clipPath id="ssb-usb-clip">
+    <path d="M 630,219 C 635,219 641,215 649,205 C 657,193 664,175 671,162 C 678,153 684,148 690,148 C 696,148 702,153 709,162 C 716,175 723,193 731,205 C 739,215 748,219 755,219 Z"/>
+  </clipPath>
+  
+  <g clip-path="url(#ssb-usb-clip)">
+    <line x1="640" y1="140" x2="640" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="650" y1="140" x2="650" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="660" y1="140" x2="660" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="670" y1="140" x2="670" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="680" y1="140" x2="680" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="690" y1="140" x2="690" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="700" y1="140" x2="700" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="710" y1="140" x2="710" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="720" y1="140" x2="720" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="730" y1="140" x2="730" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="740" y1="140" x2="740" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+    <line x1="750" y1="140" x2="750" y2="220" stroke="#2a9d8f" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- Upper sideband label -->
+  <text x="690" y="130" text-anchor="middle" font-size="11.5" fill="#1a1a2e">Upper</text>
+  <text x="690" y="144" text-anchor="middle" font-size="11.5" fill="#1a1a2e">sideband</text>
+
+</svg>
