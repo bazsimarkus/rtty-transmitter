@@ -155,6 +155,10 @@ The result of stacking these two transistors is that Q1 chops the current into R
 
 At the top of the pipe, connected between the 5V supply and Q1's collector, is L1: a 1 mH choke inductor. This component is essential and its role is easily misunderstood. It has near-zero DC resistance, so it feeds the transistors the full 5V DC supply without any resistive drop. But at 802 kHz, a 1 mH inductor has an impedance of approximately 5000 ohms. This means the RF signal generated at Q1's collector has nowhere to go toward the power supply: the inductor acts as a wall for RF. The RF energy is therefore forced to flow out through the 100 nF output capacitor (C10) toward the antenna matching section. The choke also allows Q1's collector voltage to swing higher than the supply voltage during the inductive "kickback," which increases the available output swing and power compared to using a plain resistor in the same position.
 
+Before building the circuit on PCB, the two-transistor cascode AM modulator was simulated in LTspice to verify that the topology produces a clean AM output. The simulation confirmed the expected behaviour: a 802 kHz carrier whose envelope is cleanly modulated by the audio signal, with no overmodulation or clipping. The LTspice project file is included in the ltspice folder of the repository.
+
+![Cascode AM modulator LTspice simulation](docs/images/Cascode-AM-modulator-ltspice-screenshot.png)
+
 ### Tank Circuit and Antenna Output
 
 After the RF output stage, the signal passes through an LC matching and filtering network before reaching the antenna. Each component in this path has a specific purpose.
