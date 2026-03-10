@@ -51,6 +51,8 @@ An ATmega328P-based AM/RTTY transmitter card with USB serial control, Direct Dig
 
 This project is a self-contained AM/RTTY transmitter card designed and built around the ATmega328P microcontroller. The board generates FSK (Frequency Shift Keying) audio tones using a software Direct Digital Synthesis engine, feeds those tones through an 8-bit SPI DAC, buffers and amplifies them through a dual op-amp stage, and then modulates them onto a carrier wave produced by a Wien bridge oscillator running at approximately 802 kHz. The resulting AM signal is delivered to an SMA connector for antenna connection.
 
+![RTTY/AM Transmitter card block diagram](docs/images/rtty-transmitter-block-diagram.svg)
+
 The board is powered and controlled through a single USB Type B cable. An MCP2221A USB-to-UART bridge makes the board appear as a standard COM port on the host computer, requiring no custom drivers beyond the standard MCP2221 package. All board functions are controlled through a straightforward AT command interface at 9600 baud. A Python-based control center application is included in the tools folder to provide a graphical interface for all features, including RTTY message transmission, text file transmission, PCM audio upload and playback, and GPIO control.
 
 The board can also function as an audio transmitter: an 8-bit, 8 kHz PCM audio file can be uploaded to the onboard 25LC1024 SPI EEPROM (128 KB) and played back over the air using the AT+play command, AM-modulating the 802 kHz carrier with audio content.
