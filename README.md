@@ -167,7 +167,7 @@ The result of stacking Q1 on top of Q2 is that Q1 chops the current into rapid R
 
 L1 (1mH) is an RF choke, an inductor specifically used to block high-frequency signals from travelling somewhere they shouldn't. It connects between the 5V supply and Q1's collector. It has almost zero DC resistance, so it passes the full supply voltage to the transistors without dropping it. But at 802 kHz, a 1mH inductor has an impedance of roughly 5000 ohms, and it acts like a wall for RF. So the RF signal generated at Q1's collector cannot go back toward the power supply through L1. Instead it is forced to flow out through C10 (100nF) toward the antenna. As a side effect, L1 also lets Q1's collector voltage momentarily swing higher than 5V due to inductive kickback, which increases the available output swing.
 
-Before building the circuit on PCB, the two-transistor cascode AM modulator was simulated in LTspice to verify that the topology produces a clean AM output. The simulation confirmed the expected behaviour: a 802 kHz carrier whose envelope is cleanly modulated by the audio signal, with no overmodulation or clipping. The LTspice project file is included in the ltspice folder of the repository.
+Before building the circuit on PCB, the two-transistor cascode AM modulator was simulated in LTspice to verify that the topology produces a clean AM output. The simulation confirmed the expected behaviour: a carrier wave whose envelope is cleanly modulated by the audio signal, with no overmodulation or clipping. The LTspice project file is included in the ltspice folder of the repository.
 
 ![Cascode AM modulator LTspice simulation](docs/images/Cascode-AM-modulator-ltspice-screenshot.png)
 
