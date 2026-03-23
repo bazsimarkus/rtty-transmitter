@@ -372,6 +372,8 @@ The board can transmit audio over the AM carrier, not just RTTY tones. The audio
 
 PCM (Pulse Code Modulation) is the simplest digital audio format: every sample is a number representing the amplitude of the sound at that instant in time. The firmware uses 8-bit unsigned PCM at 8 kHz, which means each sample is a single byte (0-255, where 128 represents silence/midpoint), and 8000 samples are played per second. This is the same format as old telephone audio and is perfectly adequate for speech and simple sounds. The maximum recording length is 131072 bytes divided by 8000 samples per second, which gives approximately 16.4 seconds of audio.
 
+Four ready-to-use sample files are included in the `assets/pcm-samples` directory and can be uploaded directly through the control center without any conversion. Three are music clips (`dance-electronic.raw`, `energetic-rock.raw`, `pop-upbeat.raw`), and one is a 1 kHz sine wave (`sine-1khz.raw`) useful for testing and verifying the audio chain. Of course, any audio can also be converted from any source using Audacity as described in the following section.
+
 To prepare an audio file for upload, use Audacity (free, available at https://www.audacityteam.org):
 
 1. Open your audio file in Audacity, or record directly.
